@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Collection View";
 //    UICollectionViewLayout *uvl = [[UICollectionViewLayout alloc] init];
 //    uvl
 //    [self.view addSubview:uvl];

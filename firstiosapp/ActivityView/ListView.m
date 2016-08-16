@@ -17,6 +17,7 @@
 NSIndexPath *lastPath;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"List View";
     UIView *baseview = [[UIView alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
     baseview.backgroundColor = [[UIColor alloc] initWithRed:1 green:1 blue:1 alpha:1.0];
     [self.view addSubview:baseview];

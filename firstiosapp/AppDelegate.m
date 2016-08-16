@@ -30,6 +30,17 @@
 //    _window.backgroundColor = [UIColor redColor];
 //    [_window makeKeyAndVisible];
     // Override point for customization after application launch.
+//    if ([[UIApplication sharedApplication]currentUserNotificationSettings].types==UIUserNotificationTypeNone) {
+//        [[UIApplication sharedApplication]registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound  categories:nil]];
+//    }
+    //注册notification
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0){
+        [[UIApplication sharedApplication]registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound  categories:nil]];
+        [application registerForRemoteNotifications];
+    } else{
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
+    }
+
     return YES;
 }
 
@@ -53,6 +64,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    NSLog(notification.alertBody);
+    NSLog(notification.alertAction);
+    application.applicationIconBadgeNumber-=1;
 }
 
 @end

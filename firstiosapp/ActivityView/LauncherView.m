@@ -11,12 +11,16 @@
 #import "ListView.h"
 #import "CollectionView.h"
 #import "NetViewController.h"
+#import "NotificationViewController.h"
+#import "BaseTabBarController.h"
 
 @interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
 @end
 
-@implementation LauncherView
+@implementation LauncherView{
+    BaseTabBarController *btvc;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -77,6 +81,27 @@
             break;
         case ItemTypeNetView:
             [self.navigationController pushViewController:[[NetViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeNotificationView:
+            [self.navigationController pushViewController:[[NotificationViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeUITabBarController:
+            btvc = [[BaseTabBarController alloc] init];
+            CATransition *animation = [CATransition animation];
+            [animation setDuration:1.5];
+            [animation setType:kCATransitionPush];
+            [animation setSubtype:kCATransitionFromRight];
+            [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+            [[btvc.view layer] addAnimation:animation forKey:@"SwitchToView"];
+
+//            [UIView beginAnimations: nil context:NULL];
+//            [UIView setAnimationDuration:0.5];
+//            [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:btvc.view cache:YES];
+
+//            [self setModalPresentationStyle:UIModalPresentationFullScreen];
+            [self presentModalViewController:btvc animated:NO];
+//            [UIView commitAnimations];
+//            [self.navigationController pushViewController:[[BaseTabBarController alloc] init] animated:YES];
             break;
     }
 }

@@ -9,17 +9,23 @@
 #import "UIKit/UIKit.h"
 static const NSString *hello=@"heheh";
 #define PI 3.14;
-#define MyItems @[@"常见View",@"UITableView",@"UICollectionView",@"网络相关"]
+#define MyItems @[@"常见View",@"UITableView",@"UICollectionView",@"网络相关",@"系统通知",@"UITabBarController"]
 typedef NS_ENUM (NSInteger ,ItemType){
     ItemTypeNormalView = 0,
     ItemTypeTableView,
     ItemTypeCollectionView,
-    ItemTypeNetView
+    ItemTypeNetView,
+    ItemTypeNotificationView,
+    ItemTypeUITabBarController
 };
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-#define STATUSBAR_HEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height);
+#define StatusBarHeight    20
+#define TabBarHeight       49
+#define NavBarHeight       44
+#define StartY             64
+#define NormalHeight       [UIScreen mainScreen].bounds.size.height-20-44
 static NSString *baseurl = @"http://www.66liuliang.com/12321/index.php/";
 
 #endif

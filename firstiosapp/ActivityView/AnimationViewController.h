@@ -10,6 +10,6 @@
 
 #import "BaseViewController.h"
 
-@interface AnimationViewController : BaseViewController
+@interface AnimationViewController : BaseViewController 
 
 @end

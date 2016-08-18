@@ -54,6 +54,7 @@ NSTimer *timer1 = nil;
     [UIView setAnimationDuration:0.3];
     _contentView.alpha = 0.0f;
     [UIView commitAnimations];
+    [NSString stringWithFormat:@"%d",1];
 }
 
 + (void)show:(NSString *)message {
@@ -64,6 +65,26 @@ NSTimer *timer1 = nil;
     }
     [toast show:message];
 }
+//+ (void)show:(NSString *)message, ... {
+//    id eachmessage;
+//    va_list messages;
+//    if (message){
+//        va_start(messages,message);
+//        while ((eachmessage = va_arg(messages,id))){
+//            if (eachmessage)
+//            message = [message stringByAppendingString:eachmessage];
+////            NSRange range = [message rangeOfString:@"%@"];
+////            message = [message stringByReplacingCharactersInRange:range withString:eachmessage];
+//        }
+//    }
+//    va_end(messages);
+//    if (!toast){
+//        toast = [[Toast alloc] initWithMessage:message];
+//    } else{
+//        [toast initWithMessage:message];
+//    }
+//    [toast show:message];
+//}
 
 -(void)show:(NSString *)message{
     UIView *currentToast = [[UIApplication sharedApplication].keyWindow viewWithTag:CURRENT_TOAST_TAG];

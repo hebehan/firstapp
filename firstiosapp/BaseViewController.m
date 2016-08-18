@@ -28,7 +28,6 @@
     }
     _alertView.delegate = self;
     _NavigationHeight = self.navigationController.navigationBar.frame.size.height;
-    NSLog(@"height%f",_NavigationHeight);
 //    [[UIScreen mainScreen] bounds].size.height
     // Do any additional setup after loading the view.
 }

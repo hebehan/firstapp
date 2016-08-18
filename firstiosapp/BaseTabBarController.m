@@ -23,6 +23,7 @@
     self.tabBar.tintColor = [UIColor greenColor];
     [self setUpAllChildVC];
     self.tabBar.translucent = NO;
+//    [self setModalTransitionStyle:UIModalPresentationCustom];
 //    [self setModalTransitionStyle:UIModalTransitionStylePartialCurl];
 //    CATransition *animation = [CATransition animation];
 //    [animation setDuration:0.5];

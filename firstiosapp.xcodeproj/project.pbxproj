@@ -12,6 +12,7 @@
 		224222A759D685089C30420F /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422857D5176F6165D2F83B /* NetViewController.m */; };
 		22422306A46B93DB86AB4ECB /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422835B6CE661D036768A8 /* Utils.m */; };
 		2242231FEB987F4D67FD2FF6 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422325902B42834EE8746B /* BaseNavigationController.m */; };
+		224223361963FCB71450E6FA /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224223A464EFDF1792AD7592 /* AnimationViewController.m */; };
 		224223C1FF06181E5623A2AE /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224227E42C64D7C4F1A0FECE /* ListView.m */; };
 		2242241D30E60974CDC0B4EF /* loadxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224226340EC13EC42B4261AE /* loadxib.xib */; };
 		22422616185C27A7655CEDF6 /* firstxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22422AA3837BB1808521FB40 /* firstxib.xib */; };
@@ -20,6 +21,7 @@
 		224227172C3FAE0EC9604B82 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224227DE63149CF186AE8A70 /* MyCollectionCell.xib */; };
 		22422728A2FAAF87DED462CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422CA91D38D11FD6414911 /* AppDelegate.m */; };
 		2242278D4F5E4DB17BA8EE5D /* MyTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220ECB8E422498225435B /* MyTabCell.m */; };
+		224227A790344B42B52A6AB3 /* HebeVCAT.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422053D9500C9CCD91F96A /* HebeVCAT.m */; };
 		224228C477BBFB24B8FFDBE6 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422574E3A38C54A42B598C /* CollectionView.m */; };
 		2242297BA8093861B907884C /* NormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422126D4043299B09A9958 /* NormalViewController.m */; };
 		224229FBA6A92B43DD5F6DE2 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220476E79F2E1CD7063AB /* NotificationViewController.m */; };
@@ -54,7 +56,9 @@
 /* Begin PBXFileReference section */
 		2242201A174B2BC98D373A64 /* MyCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionCell.h; sourceTree = "<group>"; };
 		224220476E79F2E1CD7063AB /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		22422053D9500C9CCD91F96A /* HebeVCAT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HebeVCAT.m; sourceTree = "<group>"; };
 		224220681E402D7034653E6F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		224220CB5E626DCE98052063 /* HebeVCAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HebeVCAT.h; sourceTree = "<group>"; };
 		224220ECB8E422498225435B /* MyTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabCell.m; sourceTree = "<group>"; };
 		2242211AC98E84D150129B41 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		22422126D4043299B09A9958 /* NormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalViewController.m; sourceTree = "<group>"; };
@@ -66,7 +70,9 @@
 		2242231FD5836D312A6DCB33 /* XibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
 		22422325902B42834EE8746B /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		224223508B787B6DFE2EF072 /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		224223A464EFDF1792AD7592 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		224224345CB9260CFB31D49F /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		2242244E0BB4151DF3809E92 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
 		224224F7E7487A4DE60C8C1B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		224225142E8732811F97BBCE /* HebeNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HebeNetWork.h; sourceTree = "<group>"; };
 		22422574E3A38C54A42B598C /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
@@ -127,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2242226826D4111D764077FE /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				224220CB5E626DCE98052063 /* HebeVCAT.h */,
+				22422053D9500C9CCD91F96A /* HebeVCAT.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		22422292391302D38C225A05 /* XibLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +210,8 @@
 				22422857D5176F6165D2F83B /* NetViewController.m */,
 				224224345CB9260CFB31D49F /* NotificationViewController.h */,
 				224220476E79F2E1CD7063AB /* NotificationViewController.m */,
+				2242244E0BB4151DF3809E92 /* AnimationViewController.h */,
+				224223A464EFDF1792AD7592 /* AnimationViewController.m */,
 			);
 			path = ActivityView;
 			sourceTree = "<group>";
@@ -244,6 +261,7 @@
 				224226022A56C65F4D75BAB7 /* Widget */,
 				22422387DC0B2BF0857A5DE0 /* Utils */,
 				224227AB64E276AB394D3B42 /* HebeNetWork */,
+				2242226826D4111D764077FE /* Animation */,
 			);
 			path = firstiosapp;
 			sourceTree = "<group>";
@@ -421,6 +439,8 @@
 				224229FBA6A92B43DD5F6DE2 /* NotificationViewController.m in Sources */,
 				2242231FEB987F4D67FD2FF6 /* BaseNavigationController.m in Sources */,
 				22422E6188C560D3CA5557D4 /* BaseTabBarController.m in Sources */,
+				224227A790344B42B52A6AB3 /* HebeVCAT.m in Sources */,
+				224223361963FCB71450E6FA /* AnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

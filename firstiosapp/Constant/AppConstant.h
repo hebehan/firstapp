@@ -9,7 +9,7 @@
 #import "UIKit/UIKit.h"
 static const NSString *hello=@"heheh";
 #define PI 3.14;
-#define MyItems @[@"常见View",@"UITableView",@"UICollectionView",@"网络相关",@"系统通知",@"UITabBarController",@"动画"]
+#define MyItems @[@"常见View",@"UITableView",@"UICollectionView",@"网络相关",@"系统通知",@"UITabBarController",@"动画",@"手势"]
 typedef NS_ENUM (NSInteger ,ItemType){
     ItemTypeNormalView = 0,
     ItemTypeTableView,
@@ -17,7 +17,8 @@ typedef NS_ENUM (NSInteger ,ItemType){
     ItemTypeNetView,
     ItemTypeNotificationView,
     ItemTypeUITabBarController,
-    ItemTypeAnimation
+    ItemTypeAnimation,
+    ItemTypeGesRec
 };
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

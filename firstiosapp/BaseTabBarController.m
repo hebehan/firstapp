@@ -18,7 +18,7 @@
 @implementation BaseTabBarController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
     self.tabBar.backgroundColor = [UIColor blackColor];
     self.tabBar.tintColor = [UIColor greenColor];
     [self setUpAllChildVC];

@@ -12,7 +12,7 @@
 @end
 @implementation BaseNavigationController
 + (void)initialize {
-    UINavigationBar *naviBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
+    UINavigationBar *naviBar = [UINavigationBar appearanceWhenContainedIn:[self class],nil];
     naviBar.barTintColor = [UIColor whiteColor];
     naviBar.tintColor = [UIColor blackColor];
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];

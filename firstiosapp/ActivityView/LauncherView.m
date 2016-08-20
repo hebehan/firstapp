@@ -14,13 +14,16 @@
 #import "NotificationViewController.h"
 #import "BaseTabBarController.h"
 #import "AnimationViewController.h"
+#import "HebeVCAT.h"
+#import "MyGesRecViewController.h"
 
-@interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
+@interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
 @end
 
 @implementation LauncherView{
-
+    HebeVCAT *hebeVCAT;
+    BaseTabBarController *tabBarController1;
 }
 
 - (void)viewDidLoad {
@@ -32,6 +35,7 @@
 //    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:tableView];
+    hebeVCAT = [HebeVCAT new];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,10 +91,15 @@
             [self.navigationController pushViewController:[[NotificationViewController alloc] init] animated:YES];
             break;
         case ItemTypeUITabBarController:
-            [self presentModalViewController:[[BaseTabBarController alloc] init] animated:YES];
+            tabBarController1 = [[BaseTabBarController alloc] init];
+            tabBarController1.transitioningDelegate = self;
+            [self presentModalViewController:tabBarController1 animated:YES];
             break;
         case ItemTypeAnimation:
             [self.navigationController pushViewController:[[AnimationViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeGesRec:
+            [self.navigationController pushViewController:[[MyGesRecViewController alloc] init] animated:YES];
             break;
     }
 }
@@ -147,5 +156,11 @@
     }
 }
 
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return hebeVCAT;
+}
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return hebeVCAT;
+}
 
 @end

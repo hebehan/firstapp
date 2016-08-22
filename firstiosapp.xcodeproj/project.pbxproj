@@ -17,6 +17,7 @@
 		2242241D30E60974CDC0B4EF /* loadxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224226340EC13EC42B4261AE /* loadxib.xib */; };
 		22422616185C27A7655CEDF6 /* firstxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22422AA3837BB1808521FB40 /* firstxib.xib */; };
 		2242264685DCCEF50B5E6084 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422A5B5801079F197A8FB7 /* Toast.m */; };
+		224226722CA6D8254F5837AA /* TakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242282E569D14EE719E6554 /* TakePhotoViewController.m */; };
 		224226D4AFEDA3377EE04033 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224227FA1A5B7CFA8BF6E3D5 /* SecondViewController.m */; };
 		224227172C3FAE0EC9604B82 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224227DE63149CF186AE8A70 /* MyCollectionCell.xib */; };
 		22422728A2FAAF87DED462CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422CA91D38D11FD6414911 /* AppDelegate.m */; };
@@ -88,6 +89,7 @@
 		224227FA1A5B7CFA8BF6E3D5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		22422818DEC74ADCA77E05A0 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
 		22422826ACAAEF066D1847E5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2242282E569D14EE719E6554 /* TakePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoViewController.m; sourceTree = "<group>"; };
 		22422835B6CE661D036768A8 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		22422857D5176F6165D2F83B /* NetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetViewController.m; sourceTree = "<group>"; };
 		2242286DCD28ABF1D74D5628 /* MyGesRecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGesRecViewController.m; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		2242297ACFD21D9DD4DCC9C3 /* NetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetViewController.h; sourceTree = "<group>"; };
 		2242297DADE078121D2630F5 /* NormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalViewController.h; sourceTree = "<group>"; };
 		22422A1CA0CB2115338F8014 /* MyTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabCell.h; sourceTree = "<group>"; };
+		22422A3F2771E5FBD17793C1 /* TakePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoViewController.h; sourceTree = "<group>"; };
 		22422A5B5801079F197A8FB7 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		22422AA3837BB1808521FB40 /* firstxib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firstxib.xib; sourceTree = "<group>"; };
 		22422ACA1494DBFDBFE4B4DF /* HebeNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HebeNetWork.m; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 				224223A464EFDF1792AD7592 /* AnimationViewController.m */,
 				224220B1B04D0299F4B7AAD4 /* MyGesRecViewController.h */,
 				2242286DCD28ABF1D74D5628 /* MyGesRecViewController.m */,
+				22422A3F2771E5FBD17793C1 /* TakePhotoViewController.h */,
+				2242282E569D14EE719E6554 /* TakePhotoViewController.m */,
 			);
 			path = ActivityView;
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				224227A790344B42B52A6AB3 /* HebeVCAT.m in Sources */,
 				224223361963FCB71450E6FA /* AnimationViewController.m in Sources */,
 				224229D5304BF31E5E93D2B5 /* MyGesRecViewController.m in Sources */,
+				224226722CA6D8254F5837AA /* TakePhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

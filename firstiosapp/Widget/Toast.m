@@ -56,7 +56,10 @@ NSTimer *timer1 = nil;
     [UIView commitAnimations];
     [NSString stringWithFormat:@"%d",1];
 }
-
+/**
+ * 显示toast
+ * @param message
+ */
 + (void)show:(NSString *)message {
     if (!toast){
         toast = [[Toast alloc] initWithMessage:message];

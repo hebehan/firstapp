@@ -7,10 +7,12 @@
 //
 
 #import "MyGesRecViewController.h"
+#import "Toast.h"
 
 @implementation MyGesRecViewController{
     UIButton *panButton;
     UIButton *pinchButton;
+    UIButton *rotationButton;
 }
 
 - (void)viewDidLoad {
@@ -24,14 +26,23 @@
 
     pinchButton = [[UIButton alloc] initWithFrame:CGRectMake(panButton.frame.origin.x+panButton.frame.size.width+50,StartY+120,120,120)];
     pinchButton.backgroundColor = [UIColor cyanColor];
-    [pinchButton setTitle:@"Pan+Pinch" forState:UIControlStateNormal];
+    [pinchButton setTitle:@"Pinch+rotation" forState:UIControlStateNormal];
     [pinchButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:pinchButton];
     UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinchbutton:)];
     [pinchButton addGestureRecognizer:pinchGestureRecognizer];
 //    [pinchButton addGestureRecognizer:panGestureRecognizer];
 
+    UIRotationGestureRecognizer *rotationGestureRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotationButton:)];
+    [pinchButton addGestureRecognizer:rotationGestureRecognizer];
 
+    UISwipeGestureRecognizer *swipeLeftGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipeLeftGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    UISwipeGestureRecognizer *swipeRightGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeAction:)];
+    swipeRightGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    self.view.userInteractionEnabled = YES;
+    [self.view addGestureRecognizer:swipeLeftGestureRecognizer];
+    [self.view addGestureRecognizer:swipeRightGestureRecognizer];
 }
 
 /**
@@ -56,9 +67,33 @@
     }
 }
 
+/**
+ * 缩放手势
+ * @param pinch
+ */
 -(void)pinchbutton:(UIPinchGestureRecognizer *)pinch{
 
     pinch.view.transform = CGAffineTransformScale(pinch.view.transform,pinch.scale,pinch.scale);
     pinch.scale = 1;
+}
+
+/**
+ * 旋转手势
+ * @param rotation
+ */
+-(void)rotationButton:(UIRotationGestureRecognizer *)rotation{
+    rotation.view.transform = CGAffineTransformRotate(rotation.view.transform,rotation.rotation);
+    rotation.rotation = 0;
+}
+/**
+ * 滑动手势
+ * @param swipe
+ */
+-(void)swipeAction:(UISwipeGestureRecognizer *)swipe{
+    if (swipe.direction == UISwipeGestureRecognizerDirectionLeft){
+        [Toast show:@"左滑"];
+    } else if (swipe.direction == UISwipeGestureRecognizerDirectionRight){
+        [Toast show:@"右滑"];
+    }
 }
 @end

@@ -17,6 +17,8 @@
 #import "HebeVCAT.h"
 #import "MyGesRecViewController.h"
 #import "TakePhotoViewController.h"
+#import "IntentViewController.h"
+#import "DeviceInfoViewController.h"
 
 @interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
@@ -104,6 +106,12 @@
             break;
         case ItemTypePhoto:
             [self.navigationController pushViewController:[[TakePhotoViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeIntent:
+            [self.navigationController pushViewController:[[IntentViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeDeviceInfo:
+            [self.navigationController pushViewController:[[DeviceInfoViewController alloc] init] animated:YES];
             break;
     }
 }

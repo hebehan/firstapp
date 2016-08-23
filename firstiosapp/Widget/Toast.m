@@ -54,7 +54,6 @@ NSTimer *timer1 = nil;
     [UIView setAnimationDuration:0.3];
     _contentView.alpha = 0.0f;
     [UIView commitAnimations];
-    [NSString stringWithFormat:@"%d",1];
 }
 /**
  * 显示toast

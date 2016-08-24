@@ -9,12 +9,15 @@
 #import "AppDelegate.h"
 #import "NormalViewController.h"
 #import "LauncherView.h"
+#import "Utils.h"
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    BOOL lastNetState;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -26,6 +29,7 @@
     self.window.rootViewController=navi;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    lastNetState = YES;
 //    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    _window.backgroundColor = [UIColor redColor];
 //    [_window makeKeyAndVisible];
@@ -33,6 +37,7 @@
 //    if ([[UIApplication sharedApplication]currentUserNotificationSettings].types==UIUserNotificationTypeNone) {
 //        [[UIApplication sharedApplication]registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound  categories:nil]];
 //    }
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(notifiNetState) userInfo:nil repeats:YES];
     //注册notification
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0){
         [[UIApplication sharedApplication]registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound  categories:nil]];
@@ -70,6 +75,13 @@
     NSLog(notification.alertBody);
     NSLog(notification.alertAction);
     application.applicationIconBadgeNumber-=1;
+}
+
+-(void)notifiNetState{
+    if (lastNetState != [Utils isConnectedNetwork]){
+        NSLog([Utils isConnectedNetwork]?@"网络连接":@"网络断开");
+        lastNetState = [Utils isConnectedNetwork];
+    }
 }
 
 @end

@@ -30,7 +30,7 @@
 
 -(void)showSelect{
     UIActionSheet *sheet123 = [[UIActionSheet alloc] initWithTitle:@"选择" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照",@"相册",nil];
-    [sheet123 showFromTabBar:self.tabBarController.tabBar];
+    [sheet123 showInView:self.view];
 //    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"选择" delegate:self cancelButtonTitle:@"取消"
 //                                               destructiveButtonTitle:nil
 //                                                    otherButtonTitles:@"拍照",@"相册",nil];
@@ -75,6 +75,7 @@
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissModalViewControllerAnimated:YES];
     [Toast show:@"取消选择"];
 }
 

@@ -68,13 +68,13 @@
 -(void)PhoneTap{
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"打电话" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"方式1",@"方式2",@"方式3",nil];
     actionSheet.tag = 1;
-    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+    [actionSheet showInView:self.view];
 }
 
 -(void)smsTap{
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"发短信" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"方式1",@"方式2",nil];
     actionSheet.tag = 2;
-    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+    [actionSheet showInView:self.view];
 }
 -(void)browseTap{
     NSMutableString *string = [[NSMutableString alloc] initWithFormat:@"http://www.google.com/ncr"];
@@ -102,7 +102,7 @@
 -(void)settingTap{
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Setting" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"prefs:root=INTERNET_TETHERING",@"prefs:root=WIFI",@"prefs:root=General&path=About",nil];
     actionSheet.tag = 3;
-    [actionSheet showFromTabBar:self.tabBarController.tabBar];
+    [actionSheet showInView:self.view];
 }
 
 -(void)intentApp{

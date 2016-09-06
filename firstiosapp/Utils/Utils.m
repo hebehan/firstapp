@@ -8,7 +8,19 @@
 @interface Utils()
 
 @end
-@implementation Utils
+static NSTimer *timer = nil;
+static BOOL lastNetState = YES;
+static Utils *instance = nil;
+@implementation Utils{
+}
++ (instancetype)getInstance {
+        @synchronized (self) {
+                if (instance == nil){
+                        instance = [[self alloc] init];
+                }
+        }
+        return instance;
+}
 
 +(CGSize) getStringCGSize:(NSString *)string fontsize:(CGFloat)size width:(CGFloat)width height:(CGFloat)height mode:(NSLineBreakMode)mode {
 
@@ -75,5 +87,25 @@
         BOOL isReachable = ((flags & kSCNetworkFlagsReachable) != 0);
         BOOL needsConnection = ((flags & kSCNetworkFlagsConnectionRequired) != 0);
         return (isReachable && !needsConnection) ? YES : NO;
+}
+
+- (void)startNetListener {
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(notifiNetState) userInfo:nil repeats:YES];
+}
+
+- (void)stopNetListener {
+        if (timer)
+                [timer invalidate];
+}
+
+-(void)notifiNetState{
+        BOOL isconnect = [Utils isConnectedNetwork];
+        if (lastNetState != isconnect){
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"netstate" object:isconnect?@"YES":@"NO"];
+                NSLog(isconnect?@"网络连接":@"网络断开");
+                if (self.netDelegate)
+                        [self.netDelegate onNetStateChanged:isconnect];
+                lastNetState = isconnect;
+        }
 }
 @end

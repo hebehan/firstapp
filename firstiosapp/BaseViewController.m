@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController ()<UIAlertViewDelegate>
+@interface BaseViewController ()
 @property (retain, nonatomic)UIAlertView *alertView;
 @end
 
@@ -28,6 +28,7 @@
     }
     _alertView.delegate = self;
     _NavigationHeight = self.navigationController.navigationBar.frame.size.height;
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(netNotification:) name:@"netstate" object:nil];
 //    [[UIScreen mainScreen] bounds].size.height
     // Do any additional setup after loading the view.
 }
@@ -40,15 +41,29 @@
 - (void)showAlert:(NSString *)title message:(NSString *)message{
     _alertView.title = title;
     _alertView.message = message;
-    _alertView.delegate = self;
-    [_alertView addButtonWithTitle:@"OK"];
-    _alertView.cancelButtonIndex = 0;
+//    [_alertView setCancelButtonIndex:[_alertView addButtonWithTitle:@"OK"]];
+//    [_alertView setCancelButtonIndex:-1];
     [_alertView show];
 }
+
+
 
 - (void)setStatusBarState:(UIStatusBarStyle)style {
     [[UIApplication sharedApplication] setStatusBarStyle:style animated:YES];
 }
+
+//-(void)netNotification:(NSNotification *)notification{
+//    NSLog(@"hahaha");
+//    if ([[notification object] isEqual:@"YES"]){
+//        if (_alertView){
+//            [_alertView dismissWithClickedButtonIndex:-10086 animated:NO];
+//        }
+//    } else{
+//        [self showAlert:@"提示" message:@"网络已断开!"];
+//    }
+//    NSLog([notification object]);
+//}
+
 
 /*
 #pragma mark - Navigation

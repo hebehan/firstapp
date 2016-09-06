@@ -9,7 +9,7 @@
 #import "UIKit/UIKit.h"
 static const NSString *hello=@"heheh";
 #define PI 3.14;
-#define MyItems @[@"常见View",@"UITableView",@"UICollectionView",@"网络相关",@"系统通知",@"UITabBarController",@"动画",@"手势",@"选图拍照",@"相关跳转",@"设备信息"]
+#define MyItems @[@"常见View",@"UITableView",@"UICollectionView",@"网络相关",@"系统通知",@"UITabBarController",@"动画",@"手势",@"选图拍照",@"相关跳转",@"设备信息",@"UITextFiled"]
 typedef NS_ENUM (NSInteger ,ItemType){
     ItemTypeNormalView = 0,
     ItemTypeTableView,
@@ -21,7 +21,8 @@ typedef NS_ENUM (NSInteger ,ItemType){
     ItemTypeGesRec,
     ItemTypePhoto,
     ItemTypeIntent,
-    ItemTypeDeviceInfo
+    ItemTypeDeviceInfo,
+    ItemTypeUITextFiled
 };
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
@@ -31,6 +32,7 @@ typedef NS_ENUM (NSInteger ,ItemType){
 #define NavBarHeight       44
 #define StartY             64
 #define NormalHeight       [UIScreen mainScreen].bounds.size.height-20-44
+#define KEYBORD_HEIGHT     258
 static NSString *baseurl = @"http://www.66liuliang.com/12321/index.php/";
 
 #endif

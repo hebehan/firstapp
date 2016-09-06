@@ -16,8 +16,15 @@ typedef NS_ENUM(NSInteger, Network_State) {
     Network_5G,
     Network_WIFI,
 };
+@protocol NetStateDelegate
+-(void)onNetStateChanged:(BOOL)state;
+@end
 @interface Utils : NSObject
+@property (nonatomic, assign)id<NetStateDelegate> netDelegate;
++(instancetype)getInstance;
 +(void)getStringCGSize:(NSString *)string width:(NSInteger)width height:(NSInteger)height mode:(NSLineBreakMode)mode;
+-(void)startNetListener;
+-(void)stopNetListener;
 +(Network_State)netWorkState;
 +(BOOL)isConnectedNetwork;
 @end

@@ -33,6 +33,7 @@
 		22422A3E0B396D578F4C41D4 /* LauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242296D69822564C1D66DDB /* LauncherView.m */; };
 		22422E0F330818BD43F93C6F /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224228AF7B426E4516C3A641 /* XibViewController.m */; };
 		22422E6188C560D3CA5557D4 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242211AC98E84D150129B41 /* BaseTabBarController.m */; };
+		22422E95FB750A48C01ED35E /* UITextFiledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422916A12F222AD1B13525 /* UITextFiledViewController.m */; };
 		81787EB51D25F69C00E75257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81787EB41D25F69C00E75257 /* main.m */; };
 		81787EBE1D25F69C00E75257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81787EBC1D25F69C00E75257 /* Main.storyboard */; };
 		81787EC01D25F69C00E75257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81787EBF1D25F69C00E75257 /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		2242200D077495347E187D41 /* DeviceInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoViewController.m; sourceTree = "<group>"; };
 		2242201A174B2BC98D373A64 /* MyCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionCell.h; sourceTree = "<group>"; };
 		224220476E79F2E1CD7063AB /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		2242204B962CD19293E6E0F0 /* UITextFiledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFiledViewController.h; sourceTree = "<group>"; };
 		22422053D9500C9CCD91F96A /* HebeVCAT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HebeVCAT.m; sourceTree = "<group>"; };
 		224220681E402D7034653E6F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		224220B1B04D0299F4B7AAD4 /* MyGesRecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGesRecViewController.h; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		22422857D5176F6165D2F83B /* NetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetViewController.m; sourceTree = "<group>"; };
 		2242286DCD28ABF1D74D5628 /* MyGesRecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGesRecViewController.m; sourceTree = "<group>"; };
 		224228AF7B426E4516C3A641 /* XibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
+		22422916A12F222AD1B13525 /* UITextFiledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFiledViewController.m; sourceTree = "<group>"; };
 		2242296D69822564C1D66DDB /* LauncherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherView.m; sourceTree = "<group>"; };
 		2242297ACFD21D9DD4DCC9C3 /* NetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetViewController.h; sourceTree = "<group>"; };
 		2242297DADE078121D2630F5 /* NormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalViewController.h; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 				22422A80F1B2865EA465EBB1 /* IntentViewController.m */,
 				22422D00CCD06BF2BD1C6AF4 /* DeviceInfoViewController.h */,
 				2242200D077495347E187D41 /* DeviceInfoViewController.m */,
+				2242204B962CD19293E6E0F0 /* UITextFiledViewController.h */,
+				22422916A12F222AD1B13525 /* UITextFiledViewController.m */,
 			);
 			path = ActivityView;
 			sourceTree = "<group>";
@@ -482,6 +487,7 @@
 				224226722CA6D8254F5837AA /* TakePhotoViewController.m in Sources */,
 				224226CAE13106F3B807DE4F /* IntentViewController.m in Sources */,
 				224220DD1573080790E533CA /* DeviceInfoViewController.m in Sources */,
+				22422E95FB750A48C01ED35E /* UITextFiledViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

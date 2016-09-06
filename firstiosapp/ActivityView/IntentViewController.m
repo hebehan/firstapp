@@ -8,8 +8,9 @@
 
 #import "IntentViewController.h"
 #import "Toast.h"
+#import "Utils.h"
 
-@interface IntentViewController()<UIActionSheetDelegate,MFMessageComposeViewControllerDelegate>
+@interface IntentViewController()<UIActionSheetDelegate,MFMessageComposeViewControllerDelegate,NetStateDelegate>
 @end
 @implementation IntentViewController
 
@@ -55,13 +56,14 @@
     settingButton.frame = CGRectMake(0,StartY+2*50+20,80,50);
     [settingButton setTitle:@"Setting" forState:UIControlStateNormal];
     [settingButton addTarget:self action:@selector(settingTap) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:settingButton];
+    [self.view addSubview:settingButton];
     
     UIButton *appButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    appButton.frame = CGRectMake(0,StartY+2*50+20,80,50);
+    appButton.frame = CGRectMake(0+80+20,StartY+2*50+20,80,50);
     [appButton setTitle:@"APP" forState:UIControlStateNormal];
     [appButton addTarget:self action:@selector(intentApp) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:appButton];
+    [Utils getInstance].netDelegate = self;
 
 }
 
@@ -100,9 +102,17 @@
 }
 
 -(void)settingTap{
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Setting" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"prefs:root=INTERNET_TETHERING",@"prefs:root=WIFI",@"prefs:root=General&path=About",nil];
-    actionSheet.tag = 3;
-    [actionSheet showInView:self.view];
+    NSInteger version = [[[UIDevice currentDevice].systemVersion substringWithRange:NSMakeRange(0, 1)] integerValue];
+    if (version <= 7){
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Setting" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"prefs:root=INTERNET_TETHERING",@"prefs:root=WIFI",@"prefs:root=LOCATION_SERVICES",nil];
+        actionSheet.tag = 3;
+        [actionSheet showInView:self.view];
+    } else if (version>7){
+        NSURL * url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+    if([[UIApplication sharedApplication] canOpenURL:url]) {
+        NSURL*url =[NSURL URLWithString:UIApplicationOpenSettingsURLString]; [[UIApplication sharedApplication] openURL:url];
+    }
+    }
 }
 
 -(void)intentApp{
@@ -161,8 +171,8 @@
             break;
         case 3:{
             NSLog([actionSheet buttonTitleAtIndex:buttonIndex]);
-//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[actionSheet buttonTitleAtIndex:buttonIndex]]];
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[actionSheet buttonTitleAtIndex:buttonIndex]]];
+//            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
         }
             break;
     }
@@ -183,5 +193,9 @@
         }
             break;
     }
+}
+
+- (void)onNetStateChanged:(BOOL)state {
+    NSLog(state?@"yes":@"no");
 }
 @end

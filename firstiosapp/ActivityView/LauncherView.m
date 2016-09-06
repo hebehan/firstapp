@@ -19,8 +19,9 @@
 #import "TakePhotoViewController.h"
 #import "IntentViewController.h"
 #import "DeviceInfoViewController.h"
+#import "UITextFiledViewController.h"
 
-@interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate>
+@interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate,UIAlertViewDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
 @end
 
@@ -112,6 +113,9 @@
             break;
         case ItemTypeDeviceInfo:
             [self.navigationController pushViewController:[[DeviceInfoViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeUITextFiled:
+            [self.navigationController pushViewController:[[UITextFiledViewController alloc] init] animated:YES];
             break;
     }
 }

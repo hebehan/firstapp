@@ -20,6 +20,7 @@
 #import "IntentViewController.h"
 #import "DeviceInfoViewController.h"
 #import "UITextFiledViewController.h"
+#import "SelfDrawViewController.h"
 
 @interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate,UIAlertViewDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
@@ -116,6 +117,9 @@
             break;
         case ItemTypeUITextFiled:
             [self.navigationController pushViewController:[[UITextFiledViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeBaseDraw:
+            [self.navigationController pushViewController:[[SelfDrawViewController alloc] init] animated:YES];
             break;
     }
 }

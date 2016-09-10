@@ -17,6 +17,7 @@
     return self;
 }
 
+#pragma mark 开始画
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -31,6 +32,20 @@
     CGContextFillRect(context,rect);
     CGContextFillPath(context);
     [self drawLine:context];
+    [self drawDashLine:context];
+    [self drawDashLine2:context];
+    [self drawCircle:context];
+    [self drawDashCircle:context];
+    [self drawFillCircleWithoutLine:context];
+    [self drawFillCircleWithLine:context];
+    [self drawTuoYuan:context];
+    [self drawBeiSaiEr:context];
+    [self drawText:context];
+    [self drawPic:context];
+    [self drawRectangle:context];
+    [self drawTriangle:context];
+    [self drawAnyAngle:context count:3 radius:50 center:CGPointMake(250,350)];
+    [self drawAnyAngleByCALayer:context count:5 radius:50 center:CGPointMake(100,350)];
 
 }
 
@@ -46,16 +61,7 @@
     CGContextMoveToPoint(context,0,10);
     CGContextAddLineToPoint(context,200,10);
     CGContextStrokePath(context);
-    [self drawDashLine:context];
-    [self drawDashLine2:context];
-    [self drawCircle:context];
-    [self drawDashCircle:context];
-    [self drawFillCircleWithoutLine:context];
-    [self drawFillCircleWithLine:context];
-    [self drawTuoYuan:context];
-    [self drawBeiSaiEr:context];
-    [self drawText:context];
-    [self drawPic:context];
+    
 }
 
 /**
@@ -176,16 +182,16 @@
 }
 
 /**
- * 写子画背景
+ * 写字画背景
  * @param context
  */
 -(void)drawText:(CGContextRef)context{
     CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
     CGContextSetFillColorWithColor(context, [UIColor greenColor].CGColor);
-    CGContextAddRect(context,CGRectMake(10,200,50,20));
+    CGContextAddRect(context,CGRectMake(10,300,50,20));
     CGContextDrawPath(context,kCGPathFillStroke);
     CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
-    [@"hahahaha" drawInRect:CGRectMake(10,200,50,20) withFont:[UIFont systemFontOfSize:10]];
+    [@"hahahaha" drawInRect:CGRectMake(10,300,50,20) withFont:[UIFont systemFontOfSize:10]];
 }
 
 /**
@@ -198,4 +204,96 @@
     [image drawAtPoint:CGPointMake(200,200)];//原图大小
     CGContextDrawImage(context, CGRectMake(10,200,50,20), image.CGImage);//内容大小
 }
+
+/**
+ * 画正方形
+ * @param context
+ */
+-(void)drawRectangle:(CGContextRef)context{
+    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
+    CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
+    CGContextAddRect(context,CGRectMake(10,250,30,20));
+    CGContextDrawPath(context,kCGPathFillStroke);
+}
+
+/**
+ * 画三角形
+ * @param context
+ */
+-(void)drawTriangle:(CGContextRef)context{
+    CGContextSetFillColorWithColor(context, [UIColor yellowColor].CGColor);
+    CGContextSetStrokeColorWithColor(context, [UIColor cyanColor].CGColor);
+    CGContextMoveToPoint(context,40,250);
+    CGContextAddLineToPoint(context,80,250);
+    CGContextAddLineToPoint(context,60,300);
+    CGContextClosePath(context);
+    CGContextDrawPath(context,kCGPathFillStroke);
+}
+
+-(void)drawAnyAngle:(CGContextRef)context count:(NSInteger)count radius:(NSInteger)radius center:(CGPoint)center{
+    double singleangle = 2*PI/count;
+    double nextangle = 0;
+    double startAngle = M_PI_2-singleangle/2;
+    double sidelen = 2*radius*sin(singleangle/2);
+    NSLog(@"边长是=%f",sidelen);
+    NSLog(@"每个角度是%f",singleangle*180/PI);
+    CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
+    CGContextSetFillColorWithColor(context, [UIColor clearColor].CGColor);
+    CGContextMoveToPoint(context,center.x+radius*cos(startAngle),center.y+sin(startAngle)*radius);
+    NSLog(@"start坐标是(%f,%f)",center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
+    NSLog(@"start角度是%f",startAngle*180/PI);
+    CGFloat lengths[] = {};
+    CGContextSetLineDash(context,0,lengths,0);
+    for (int i = 0; i <= count; ++i) {
+        nextangle = startAngle+i*singleangle;
+        NSLog(@"角度是%f",nextangle*180/PI);
+        NSLog(@"下一次坐标是(%f,%f)",center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
+        CGContextAddLineToPoint(context,center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
+    }
+    CGContextClosePath(context);
+    CGContextDrawPath(context,kCGPathStroke);
+}
+
+/**
+ * 画任意多边形用CAShapeLayer
+ * @param context
+ * @param count
+ * @param radius
+ * @param center
+ */
+-(void)drawAnyAngleByCALayer:(CGContextRef)context count:(NSInteger)count radius:(NSInteger)radius center:(CGPoint)center{
+    CAShapeLayer *anyangle = [CAShapeLayer layer];
+    anyangle.lineWidth = 1.0f;
+//    [dashLine setBounds:self.bounds];
+//    [dashLine setPosition:self.center];
+//    [dashLine setFrame:CGRectMake(0,40,200,40)];
+    anyangle.strokeColor = [UIColor cyanColor].CGColor;
+    anyangle.fillColor = [UIColor yellowColor].CGColor;
+    [anyangle setLineJoin:kCALineJoinRound];
+//    [anyangle setLineDashPattern:[NSArray arrayWithObjects:[NSNumber numberWithInt:20], [NSNumber numberWithInt:10],nil]];
+    CGMutablePathRef path = CGPathCreateMutable();
+
+    double singleangle = 2*PI/count;
+    double nextangle = 0;
+    double startAngle = M_PI_2-singleangle/2;
+    double sidelen = 2*radius*sin(singleangle/2);
+    NSLog(@"边长是=%f",sidelen);
+    NSLog(@"每个角度是%f",singleangle*180/PI);
+    CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
+    CGContextSetFillColorWithColor(context, [UIColor clearColor].CGColor);
+    CGPathMoveToPoint(path,nil,center.x+radius*cos(startAngle),center.y+sin(startAngle)*radius);
+    NSLog(@"start坐标是(%f,%f)",center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
+    NSLog(@"start角度是%f",startAngle*180/PI);
+    for (int i = 0; i <= count; ++i) {
+        nextangle = startAngle+i*singleangle;
+        NSLog(@"角度是%f",nextangle*180/PI);
+        NSLog(@"下一次坐标是(%f,%f)",center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
+        CGPathAddLineToPoint(path,nil,center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
+    }
+    [anyangle setPath:path];
+    [self.layer addSublayer:anyangle];
+    CGPathRelease(path);
+}
+
+
 @end

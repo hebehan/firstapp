@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		224220DD1573080790E533CA /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242200D077495347E187D41 /* DeviceInfoViewController.m */; };
+		22422174E7906732F2FF8975 /* WeekSportChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224226FC1E5482EB27763784 /* WeekSportChartView.m */; };
 		2242222D45F05F5995DFD24C /* HebeNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422ACA1494DBFDBFE4B4DF /* HebeNetWork.m */; };
 		2242225580249D69972741A8 /* MyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242216DB6DF224FA996247A /* MyCollectionCell.m */; };
 		224222A759D685089C30420F /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422857D5176F6165D2F83B /* NetViewController.m */; };
@@ -92,7 +93,9 @@
 		224225142E8732811F97BBCE /* HebeNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HebeNetWork.h; sourceTree = "<group>"; };
 		22422574E3A38C54A42B598C /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		224225B751379C2D38FB1CE7 /* BaseDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawView.m; sourceTree = "<group>"; };
+		224225D8D5ED3E4CDB9CE350 /* WeekSportChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekSportChartView.h; sourceTree = "<group>"; };
 		224226340EC13EC42B4261AE /* loadxib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loadxib.xib; sourceTree = "<group>"; };
+		224226FC1E5482EB27763784 /* WeekSportChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekSportChartView.m; sourceTree = "<group>"; };
 		224227DE63149CF186AE8A70 /* MyCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
 		224227E42C64D7C4F1A0FECE /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		224227FA1A5B7CFA8BF6E3D5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				22422818DEC74ADCA77E05A0 /* Toast.h */,
 				224228697AF3B92C4413D1EA /* BaseDrawView.h */,
 				224225B751379C2D38FB1CE7 /* BaseDrawView.m */,
+				224225D8D5ED3E4CDB9CE350 /* WeekSportChartView.h */,
+				224226FC1E5482EB27763784 /* WeekSportChartView.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -500,6 +505,7 @@
 				22422E95FB750A48C01ED35E /* UITextFiledViewController.m in Sources */,
 				224228EF5378166466774CDA /* SelfDrawViewController.m in Sources */,
 				22422D760D28ADF3B045DC56 /* BaseDrawView.m in Sources */,
+				22422174E7906732F2FF8975 /* WeekSportChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

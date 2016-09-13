@@ -16,6 +16,8 @@
 		2242231FEB987F4D67FD2FF6 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422325902B42834EE8746B /* BaseNavigationController.m */; };
 		224223361963FCB71450E6FA /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224223A464EFDF1792AD7592 /* AnimationViewController.m */; };
 		224223C1FF06181E5623A2AE /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224227E42C64D7C4F1A0FECE /* ListView.m */; };
+		2242240FAD8258B0CCA02938 /* ProgressCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242208D970435D9ED030311 /* ProgressCircleView.m */; };
+		22422410FDC8A21531565572 /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422FA72FE078A0AB166AF8 /* MotionViewController.m */; };
 		2242241D30E60974CDC0B4EF /* loadxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224226340EC13EC42B4261AE /* loadxib.xib */; };
 		22422616185C27A7655CEDF6 /* firstxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22422AA3837BB1808521FB40 /* firstxib.xib */; };
 		2242264685DCCEF50B5E6084 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422A5B5801079F197A8FB7 /* Toast.m */; };
@@ -33,6 +35,7 @@
 		224229FBA6A92B43DD5F6DE2 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220476E79F2E1CD7063AB /* NotificationViewController.m */; };
 		22422A3D32CFCC4563DEAD59 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 224220681E402D7034653E6F /* 1.png */; };
 		22422A3E0B396D578F4C41D4 /* LauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242296D69822564C1D66DDB /* LauncherView.m */; };
+		22422BF882D0222D51527956 /* HorizontalProgressDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422DD6F520B9DD5E7D1B8F /* HorizontalProgressDrawView.m */; };
 		22422D760D28ADF3B045DC56 /* BaseDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224225B751379C2D38FB1CE7 /* BaseDrawView.m */; };
 		22422E0F330818BD43F93C6F /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224228AF7B426E4516C3A641 /* XibViewController.m */; };
 		22422E6188C560D3CA5557D4 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242211AC98E84D150129B41 /* BaseTabBarController.m */; };
@@ -72,9 +75,11 @@
 		2242204B962CD19293E6E0F0 /* UITextFiledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFiledViewController.h; sourceTree = "<group>"; };
 		22422053D9500C9CCD91F96A /* HebeVCAT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HebeVCAT.m; sourceTree = "<group>"; };
 		224220681E402D7034653E6F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		2242208D970435D9ED030311 /* ProgressCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleView.m; sourceTree = "<group>"; };
 		224220B1B04D0299F4B7AAD4 /* MyGesRecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGesRecViewController.h; sourceTree = "<group>"; };
 		224220CB5E626DCE98052063 /* HebeVCAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HebeVCAT.h; sourceTree = "<group>"; };
 		224220ECB8E422498225435B /* MyTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabCell.m; sourceTree = "<group>"; };
+		224220EE438F73B1F105CC8B /* HorizontalProgressDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalProgressDrawView.h; sourceTree = "<group>"; };
 		2242211AC98E84D150129B41 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		22422126D4043299B09A9958 /* NormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalViewController.m; sourceTree = "<group>"; };
 		22422138D14E6EB752C08711 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 		224225B751379C2D38FB1CE7 /* BaseDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawView.m; sourceTree = "<group>"; };
 		224225D8D5ED3E4CDB9CE350 /* WeekSportChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekSportChartView.h; sourceTree = "<group>"; };
 		224226340EC13EC42B4261AE /* loadxib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loadxib.xib; sourceTree = "<group>"; };
+		2242264D995903457655C61F /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
 		224226FC1E5482EB27763784 /* WeekSportChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekSportChartView.m; sourceTree = "<group>"; };
 		224227DE63149CF186AE8A70 /* MyCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
 		224227E42C64D7C4F1A0FECE /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
@@ -119,10 +125,13 @@
 		22422ACA1494DBFDBFE4B4DF /* HebeNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HebeNetWork.m; sourceTree = "<group>"; };
 		22422B4F5A645559FE736E33 /* SelfDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfDrawViewController.m; sourceTree = "<group>"; };
 		22422B526E688687786F5CD8 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		22422BAA5D806B5339FDF9D1 /* ProgressCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressCircleView.h; sourceTree = "<group>"; };
 		22422CA91D38D11FD6414911 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		22422D00CCD06BF2BD1C6AF4 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
 		22422D5C7EE12AEF83E8EDA7 /* LauncherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherView.h; sourceTree = "<group>"; };
 		22422D894D3757BB3B4D613D /* SelfDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDrawViewController.h; sourceTree = "<group>"; };
+		22422DD6F520B9DD5E7D1B8F /* HorizontalProgressDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalProgressDrawView.m; sourceTree = "<group>"; };
+		22422FA72FE078A0AB166AF8 /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
 		815A31951D4B698E00B8662D /* FirstiosappPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstiosappPrefixHeader.pch; sourceTree = "<group>"; };
 		81787EB01D25F69C00E75257 /* firstiosapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstiosapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81787EB41D25F69C00E75257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -210,6 +219,10 @@
 				224225B751379C2D38FB1CE7 /* BaseDrawView.m */,
 				224225D8D5ED3E4CDB9CE350 /* WeekSportChartView.h */,
 				224226FC1E5482EB27763784 /* WeekSportChartView.m */,
+				224220EE438F73B1F105CC8B /* HorizontalProgressDrawView.h */,
+				22422DD6F520B9DD5E7D1B8F /* HorizontalProgressDrawView.m */,
+				22422BAA5D806B5339FDF9D1 /* ProgressCircleView.h */,
+				2242208D970435D9ED030311 /* ProgressCircleView.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -260,6 +273,8 @@
 				22422916A12F222AD1B13525 /* UITextFiledViewController.m */,
 				22422D894D3757BB3B4D613D /* SelfDrawViewController.h */,
 				22422B4F5A645559FE736E33 /* SelfDrawViewController.m */,
+				2242264D995903457655C61F /* MotionViewController.h */,
+				22422FA72FE078A0AB166AF8 /* MotionViewController.m */,
 			);
 			path = ActivityView;
 			sourceTree = "<group>";
@@ -506,6 +521,9 @@
 				224228EF5378166466774CDA /* SelfDrawViewController.m in Sources */,
 				22422D760D28ADF3B045DC56 /* BaseDrawView.m in Sources */,
 				22422174E7906732F2FF8975 /* WeekSportChartView.m in Sources */,
+				22422410FDC8A21531565572 /* MotionViewController.m in Sources */,
+				22422BF882D0222D51527956 /* HorizontalProgressDrawView.m in Sources */,
+				2242240FAD8258B0CCA02938 /* ProgressCircleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -110,7 +110,7 @@
     CGContextSetLineWidth(context,2.0f);
     CGFloat lengths[] = {};
     CGContextSetLineDash(context,0,lengths,0);
-    CGContextAddArc(context,30,100,20,0,2*PI,0);
+    CGContextAddArc(context,30,100,20,0,2*M_PI,0);
     CGContextDrawPath(context,kCGPathStroke);
 
     CGContextStrokeEllipseInRect(context,CGRectMake(0,100,44,44));
@@ -126,7 +126,7 @@
     CGContextSetLineWidth(context,2.0f);
     CGFloat lengths[] = {5,5};
     CGContextSetLineDash(context,0,lengths,2);
-    CGContextAddArc(context,80,100,20,0,2*PI,0);
+    CGContextAddArc(context,80,100,20,0,2*M_PI,0);
     CGContextDrawPath(context,kCGPathStroke);
 }
 /**
@@ -135,7 +135,7 @@
  */
 -(void)drawFillCircleWithoutLine:(CGContextRef)context{
     CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
-    CGContextAddArc(context,130,100,20,0,2*PI,0);
+    CGContextAddArc(context,130,100,20,0,2*M_PI,0);
     CGContextDrawPath(context,kCGPathFill);
 }
 
@@ -149,7 +149,7 @@
     CGContextSetLineWidth(context,3.0f);
     CGFloat lengths[] = {};
     CGContextSetLineDash(context,0,lengths,0);
-    CGContextAddArc(context,180,100,20,0,2*PI,0);
+    CGContextAddArc(context,180,100,20,0,2*M_PI,0);
     CGContextDrawPath(context,kCGPathFillStroke);
 }
 /**
@@ -231,22 +231,22 @@
 }
 
 -(void)drawAnyAngle:(CGContextRef)context count:(NSInteger)count radius:(NSInteger)radius center:(CGPoint)center{
-    double singleangle = 2*PI/count;
+    double singleangle = 2*M_PI/count;
     double nextangle = 0;
     double startAngle = M_PI_2-singleangle/2;
     double sidelen = 2*radius*sin(singleangle/2);
     NSLog(@"边长是=%f",sidelen);
-    NSLog(@"每个角度是%f",singleangle*180/PI);
+    NSLog(@"每个角度是%f",singleangle*180/M_PI);
     CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
     CGContextSetFillColorWithColor(context, [UIColor clearColor].CGColor);
     CGContextMoveToPoint(context,center.x+radius*cos(startAngle),center.y+sin(startAngle)*radius);
     NSLog(@"start坐标是(%f,%f)",center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
-    NSLog(@"start角度是%f",startAngle*180/PI);
+    NSLog(@"start角度是%f",startAngle*180/M_PI);
     CGFloat lengths[] = {};
     CGContextSetLineDash(context,0,lengths,0);
     for (int i = 0; i <= count; ++i) {
         nextangle = startAngle+i*singleangle;
-        NSLog(@"角度是%f",nextangle*180/PI);
+        NSLog(@"角度是%f",nextangle*180/M_PI);
         NSLog(@"下一次坐标是(%f,%f)",center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
         CGContextAddLineToPoint(context,center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
     }
@@ -273,20 +273,20 @@
 //    [anyangle setLineDashPattern:[NSArray arrayWithObjects:[NSNumber numberWithInt:20], [NSNumber numberWithInt:10],nil]];
     CGMutablePathRef path = CGPathCreateMutable();
 
-    double singleangle = 2*PI/count;
+    double singleangle = 2*M_PI/count;
     double nextangle = 0;
     double startAngle = M_PI_2-singleangle/2;
     double sidelen = 2*radius*sin(singleangle/2);
     NSLog(@"边长是=%f",sidelen);
-    NSLog(@"每个角度是%f",singleangle*180/PI);
+    NSLog(@"每个角度是%f",singleangle*180/M_PI);
     CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
     CGContextSetFillColorWithColor(context, [UIColor clearColor].CGColor);
     CGPathMoveToPoint(path,nil,center.x+radius*cos(startAngle),center.y+sin(startAngle)*radius);
     NSLog(@"start坐标是(%f,%f)",center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
-    NSLog(@"start角度是%f",startAngle*180/PI);
+    NSLog(@"start角度是%f",startAngle*180/M_PI);
     for (int i = 0; i <= count; ++i) {
         nextangle = startAngle+i*singleangle;
-        NSLog(@"角度是%f",nextangle*180/PI);
+        NSLog(@"角度是%f",nextangle*180/M_PI);
         NSLog(@"下一次坐标是(%f,%f)",center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
         CGPathAddLineToPoint(path,nil,center.x+cos(nextangle)*radius,center.y+sin(nextangle)*radius);
     }

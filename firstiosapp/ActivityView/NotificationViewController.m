@@ -18,7 +18,6 @@
     [button setTitle:@"发本地通知" forState:UIControlStateNormal];
     button.backgroundColor = [UIColor cyanColor];
     [button addTarget:self action:@selector(showNotification) forControlEvents:UIControlEventTouchUpInside];
-    [self initNotification];
     [self.view addSubview:button];
 }
 
@@ -36,7 +35,7 @@
     // 触发频率（repeatInterval是一个枚举值，可以选择每分、每小时、每天、每年等）NSCalendarUnitDay
     localNotification.repeatInterval = 0;
     // 需要在App icon上显示的未读通知数（设置为1时，多个通知未读，系统会自动加1，如果不需要显示未读数，这里可以设置0）-1貌似清空
-    localNotification.applicationIconBadgeNumber = 1;
+    localNotification.applicationIconBadgeNumber+= 1;
     //添加通知id 方便取消哪一个通知
     localNotification.userInfo = @{@"id":@"notiid1"};
     //添加notification的事件按钮名字
@@ -46,7 +45,11 @@
 }
 
 -(void)showNotification{
-    NSLog(@"showNotification");
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        [self showios8Notification];
+    } else{
+        [self initNotification];
+    }
     //注册本地通知
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }

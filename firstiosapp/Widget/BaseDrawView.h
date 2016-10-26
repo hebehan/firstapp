@@ -7,7 +7,6 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#define PI 3.14159265358979323846
 @interface BaseDrawView : UIView
 
 @end

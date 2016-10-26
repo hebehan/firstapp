@@ -8,6 +8,7 @@
 
 
 
-@interface ProgressCircleView : NSObject
-
+@interface ProgressCircleView : UIView
+@property (nonatomic)NSInteger maxValue;
+@property (nonatomic)NSInteger currentValue;
 @end

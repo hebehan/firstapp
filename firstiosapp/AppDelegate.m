@@ -10,6 +10,10 @@
 #import "NormalViewController.h"
 #import "LauncherView.h"
 #import "Utils.h"
+#import "Toast.h"
+#import "NetViewController.h"
+#import <GT/GT.h>
+
 
 @interface AppDelegate ()
 
@@ -44,6 +48,14 @@
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
     }
 
+//    GT_DEBUG_INIT;
+//    
+//    // GT Usage(合入) 设置GT logo不旋转及支持方向
+//    
+//    GT_DEBUG_SET_AUTOROTATE(false);
+//    
+//    GT_DEBUG_SET_SUPPORT_ORIENTATIONS(UIInterfaceOrientationMaskPortrait);
+   
     return YES;
 }
 
@@ -71,8 +83,14 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
     NSLog(notification.alertBody);
-    NSLog(notification.alertAction);
+//    NSLog(notification.alertAction);
     application.applicationIconBadgeNumber-=1;
+}
+
+-(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+    NSLog([shortcutItem description]);
+    [Toast show:[shortcutItem description]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"3DTOUCH" object:shortcutItem];
 }
 
 @end

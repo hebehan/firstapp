@@ -22,6 +22,9 @@
 #import "UITextFiledViewController.h"
 #import "SelfDrawViewController.h"
 #import "MotionViewController.h"
+#import "SanDTOUCHViewController.h"
+#import "Utils.h"
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate,UIAlertViewDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
@@ -30,6 +33,7 @@
 @implementation LauncherView{
     HebeVCAT *hebeVCAT;
     BaseTabBarController *tabBarController1;
+    BOOL istouch;
 }
 
 - (void)viewDidLoad {
@@ -42,6 +46,47 @@
     tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:tableView];
     hebeVCAT = [HebeVCAT new];
+    
+    if (!istouch) {
+        LAContext *context = [[LAContext alloc] init];
+        NSError *error;
+        if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&error]) {
+            [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:@"测试touchid" reply:^(BOOL success, NSError * _Nullable error) {
+                if (success) {
+                    NSLog(@"Touch ID 成功啦！！");
+                }else{
+                    NSLog(@"Touch ID 失败啦！！");
+                    NSLog(@"%@",error.description);
+                    exit(0);
+                }
+            }];
+        }
+    }
+
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
+        //代码创建3D touch 图标
+        // 创建标签的ICON图标。
+//    UIApplicationShortcutIcon *icon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeAdd];//使用系统图标
+        UIApplicationShortcutIcon *icon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"bingo.png"];//自定义图标
+        // 创建一个标签，并配置相关属性。
+        UIApplicationShortcutItem *item = [[UIApplicationShortcutItem alloc] initWithType:@"2" localizedTitle:@"么么哒" localizedSubtitle:@"爱你呦" icon:icon userInfo:nil];
+        // 将标签添加进Application的shortcutItems中。
+        [UIApplication sharedApplication].shortcutItems = @[item];
+
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(on3DTouch:) name:@"3DTOUCH" object:nil];
+    }
+
+    
+}
+
+-(void)on3DTouch:(NSNotification*)notification {
+    if ([notification.object isKindOfClass:[UIApplicationShortcutItem class]]) {
+        UIApplicationShortcutItem *item = notification.object;
+        if ([item.type isEqualToString:@"0"]) {
+            [self.navigationController pushViewController:[[NetViewController alloc] init] animated:YES];
+        }
+        NSLog(@"成了");
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,7 +110,12 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return MyItems.count;
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
+        return MyItems.count;
+    } else{
+        return [Utils removeObjectFromArrayByKey:@"3DTOUCH" array:MyItems].count;
+    }
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -124,6 +174,9 @@
             break;
         case ItemTypeMotionDraw:
             [self.navigationController pushViewController:[[MotionViewController alloc] init] animated:YES];
+            break;
+        case ItemType3DTOUCH:
+            [self.navigationController pushViewController:[[SanDTOUCHViewController alloc] init] animated:YES];
             break;
     }
 }

@@ -8,6 +8,8 @@
 
 #import "MotionViewController.h"
 #import "HorizontalProgressDrawView.h"
+#import "ProgressCircleView.h"
+#import "ProgressMDView.h"
 
 @interface MotionViewController(){
 
@@ -16,6 +18,8 @@
 @implementation MotionViewController{
     NSTimer *timer;
     HorizontalProgressDrawView *motionDrawView;
+    ProgressCircleView *progressCircleView;
+    ProgressMDView *progressMDView;
     UIButton *startbutton;
     UIButton *stopButton;
     UIButton *resumeButton;
@@ -53,6 +57,11 @@
     [self.view addSubview:startbutton];
     [self.view addSubview:stopButton];
     [self.view addSubview:resumeButton];
+
+    progressCircleView = [[ProgressCircleView alloc] initWithFrame:CGRectMake(50,StartY+100,200,100)];
+    [self.view addSubview:progressCircleView];
+    progressMDView = [[ProgressCircleView alloc] initWithFrame:CGRectMake(50,StartY+210,200,100)];
+    [self.view addSubview:progressMDView ];
 }
 
 -(void)update{
@@ -60,6 +69,10 @@
     NSLog(@"currentValue=%d",currentValue);
     motionDrawView.currentValue = currentValue;
     [motionDrawView setNeedsDisplay];
+    progressCircleView.currentValue = currentValue;
+    [progressCircleView setNeedsDisplay];
+    progressMDView.currentValue = currentValue;
+    [progressMDView setNeedsDisplay];
 }
 
 -(void)startTimer{
@@ -88,6 +101,10 @@
         timerState = 2;
         motionDrawView.currentValue = currentValue;
         [motionDrawView setNeedsDisplay];
+        progressCircleView.currentValue = currentValue;
+        [progressCircleView setNeedsDisplay];
+        progressMDView.currentValue = currentValue;
+        [progressMDView setNeedsDisplay];
         [startbutton setTitle:@"开始" forState:UIControlStateNormal];
     }
 }

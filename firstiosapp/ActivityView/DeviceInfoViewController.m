@@ -12,6 +12,7 @@
 #import "SystemConfiguration/SystemConfiguration.h"
 #import <netdb.h>
 #import <arpa/inet.h>
+#import "Utils.h"
 
 @implementation DeviceInfoViewController{
     UIScrollView *scrollView;
@@ -29,6 +30,7 @@
     UIDevice *device = [[UIDevice alloc] init];
     [infoString appendFormat:@"name -> %@\n\n",device.name];
     [infoString appendFormat:@"model -> %@\n\n",device.model];
+    [infoString appendFormat:@"model -> %@\n\n",[Utils getDeviceType]];
     [infoString appendFormat:@"type -> %@\n\n",device.localizedModel];
     [infoString appendFormat:@"sysname -> %@\n\n",device.systemName];
     [infoString appendFormat:@"sysversion -> %@\n\n",device.systemVersion];

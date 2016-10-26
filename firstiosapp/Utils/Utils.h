@@ -27,4 +27,6 @@ typedef NS_ENUM(NSInteger, Network_State) {
 -(void)stopNetListener;
 +(Network_State)netWorkState;
 +(BOOL)isConnectedNetwork;
++(NSString *)getDeviceType;
++(NSArray *)removeObjectFromArrayByKey:(NSString *)key array:(NSArray *)array;
 @end

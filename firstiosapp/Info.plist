@@ -43,23 +43,13 @@
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Hebe</string>
-			<key>UIApplicationShortcutItemSubtitle</key>
-			<string>厉害了我的哥</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>0</string>
-			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutIconTypeFavorite</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>分享&quot;firstiosapp&quot;</string>
+			<string>我是标题</string>
 			<key>UIApplicationShortcutItemType</key>
 			<string>1</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>我是副标题</string>
 			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortcutIconTypeShare</string>
-			<key>UIApplicationShortcutItemUserInfo</key>
-			<dict/>
+			<string>UIApplicationShortcutIconTypeCompose</string>
 		</dict>
 	</array>
 </dict>

@@ -24,7 +24,9 @@
 #import "MotionViewController.h"
 #import "SanDTOUCHViewController.h"
 #import "Utils.h"
+#import "JapannessViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
+#import "ALXibViewController.h"
 
 @interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate,UIAlertViewDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
@@ -47,21 +49,21 @@
     [self.view addSubview:tableView];
     hebeVCAT = [HebeVCAT new];
     
-    if (!istouch) {
-        LAContext *context = [[LAContext alloc] init];
-        NSError *error;
-        if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&error]) {
-            [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:@"测试touchid" reply:^(BOOL success, NSError * _Nullable error) {
-                if (success) {
-                    NSLog(@"Touch ID 成功啦！！");
-                }else{
-                    NSLog(@"Touch ID 失败啦！！");
-                    NSLog(@"%@",error.description);
-                    exit(0);
-                }
-            }];
-        }
-    }
+//    if (!istouch) {
+//        LAContext *context = [[LAContext alloc] init];
+//        NSError *error;
+//        if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&error]) {
+//            [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:@"测试touchid" reply:^(BOOL success, NSError * _Nullable error) {
+//                if (success) {
+//                    NSLog(@"Touch ID 成功啦！！");
+//                }else{
+//                    NSLog(@"Touch ID 失败啦！！");
+//                    NSLog(@"%@",error.description);
+//                    exit(0);
+//                }
+//            }];
+//        }
+//    }
 
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) {
         //代码创建3D touch 图标
@@ -177,6 +179,12 @@
             break;
         case ItemType3DTOUCH:
             [self.navigationController pushViewController:[[SanDTOUCHViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeJapaness:
+            [self.navigationController pushViewController:[[JapannessViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeAutoLayout:
+            [self.navigationController pushViewController:[[ALXibViewController alloc] init] animated:YES];
             break;
     }
 }

@@ -27,6 +27,7 @@
 		224227172C3FAE0EC9604B82 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224227DE63149CF186AE8A70 /* MyCollectionCell.xib */; };
 		22422728A2FAAF87DED462CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422CA91D38D11FD6414911 /* AppDelegate.m */; };
 		2242278D4F5E4DB17BA8EE5D /* MyTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220ECB8E422498225435B /* MyTabCell.m */; };
+		2242278EE629E5441C84AD5D /* ALXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242270209995A0892AD0EFE /* ALXibViewController.m */; };
 		224227A790344B42B52A6AB3 /* HebeVCAT.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422053D9500C9CCD91F96A /* HebeVCAT.m */; };
 		224228C477BBFB24B8FFDBE6 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422574E3A38C54A42B598C /* CollectionView.m */; };
 		224228EF5378166466774CDA /* SelfDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422B4F5A645559FE736E33 /* SelfDrawViewController.m */; };
@@ -35,12 +36,14 @@
 		224229FBA6A92B43DD5F6DE2 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220476E79F2E1CD7063AB /* NotificationViewController.m */; };
 		22422A3D32CFCC4563DEAD59 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 224220681E402D7034653E6F /* 1.png */; };
 		22422A3E0B396D578F4C41D4 /* LauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242296D69822564C1D66DDB /* LauncherView.m */; };
+		22422AFED87FB2745CD80206 /* JapannessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224225EE81CDA90D5F61443A /* JapannessViewController.m */; };
 		22422B55A5D1CAF854370A28 /* ProgressMDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224224BBABE702B6033D1D4B /* ProgressMDView.m */; };
 		22422BF882D0222D51527956 /* HorizontalProgressDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422DD6F520B9DD5E7D1B8F /* HorizontalProgressDrawView.m */; };
 		22422D760D28ADF3B045DC56 /* BaseDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224225B751379C2D38FB1CE7 /* BaseDrawView.m */; };
 		22422E0F330818BD43F93C6F /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224228AF7B426E4516C3A641 /* XibViewController.m */; };
 		22422E6188C560D3CA5557D4 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242211AC98E84D150129B41 /* BaseTabBarController.m */; };
 		22422E95FB750A48C01ED35E /* UITextFiledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422916A12F222AD1B13525 /* UITextFiledViewController.m */; };
+		812770AB1DC33E4400DB2563 /* autotest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812770AA1DC33E4400DB2563 /* autotest.xib */; };
 		812BABBF1DACFC9300A5817E /* bingo.png in Resources */ = {isa = PBXBuildFile; fileRef = 812BABBE1DACFC9300A5817E /* bingo.png */; };
 		812BABC21DADE15D00A5817E /* SanDTOUCHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BABC11DADE15D00A5817E /* SanDTOUCHViewController.m */; };
 		812BABC51DAE531500A5817E /* PeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BABC41DAE531500A5817E /* PeekViewController.m */; };
@@ -101,6 +104,7 @@
 		2242216DB6DF224FA996247A /* MyCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionCell.m; sourceTree = "<group>"; };
 		2242224310BD9625DC53DED9 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		22422286D1676778C08B8578 /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		224222E784ED1E5386920688 /* ALXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXibViewController.h; sourceTree = "<group>"; };
 		224222FDFBD64650E16A535B /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		2242231FD5836D312A6DCB33 /* XibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibViewController.h; sourceTree = "<group>"; };
 		22422325902B42834EE8746B /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
@@ -115,9 +119,12 @@
 		22422574E3A38C54A42B598C /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		224225B751379C2D38FB1CE7 /* BaseDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawView.m; sourceTree = "<group>"; };
 		224225D8D5ED3E4CDB9CE350 /* WeekSportChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekSportChartView.h; sourceTree = "<group>"; };
+		224225EE81CDA90D5F61443A /* JapannessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapannessViewController.m; sourceTree = "<group>"; };
 		224226340EC13EC42B4261AE /* loadxib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loadxib.xib; sourceTree = "<group>"; };
 		2242264D995903457655C61F /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		224226F800534A86B942C342 /* JapannessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapannessViewController.h; sourceTree = "<group>"; };
 		224226FC1E5482EB27763784 /* WeekSportChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekSportChartView.m; sourceTree = "<group>"; };
+		2242270209995A0892AD0EFE /* ALXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALXibViewController.m; sourceTree = "<group>"; };
 		224227DE63149CF186AE8A70 /* MyCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
 		224227E42C64D7C4F1A0FECE /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		224227FA1A5B7CFA8BF6E3D5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
@@ -148,7 +155,7 @@
 		22422D894D3757BB3B4D613D /* SelfDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDrawViewController.h; sourceTree = "<group>"; };
 		22422DD6F520B9DD5E7D1B8F /* HorizontalProgressDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalProgressDrawView.m; sourceTree = "<group>"; };
 		22422FA72FE078A0AB166AF8 /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
-		8110CF961DAB77A600588BD0 /* firstiosapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = firstiosapp.entitlements; sourceTree = "<group>"; };
+		812770AA1DC33E4400DB2563 /* autotest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = autotest.xib; sourceTree = "<group>"; };
 		812BABBE1DACFC9300A5817E /* bingo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bingo.png; path = ../../../../AppCodeWorkSpace/sh12321/sh12321/Resources/bingo.png; sourceTree = "<group>"; };
 		812BABC01DADE15D00A5817E /* SanDTOUCHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanDTOUCHViewController.h; sourceTree = "<group>"; };
 		812BABC11DADE15D00A5817E /* SanDTOUCHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanDTOUCHViewController.m; sourceTree = "<group>"; };
@@ -235,6 +242,7 @@
 				22422AA3837BB1808521FB40 /* firstxib.xib */,
 				224226340EC13EC42B4261AE /* loadxib.xib */,
 				224227DE63149CF186AE8A70 /* MyCollectionCell.xib */,
+				812770AA1DC33E4400DB2563 /* autotest.xib */,
 			);
 			path = XibLayout;
 			sourceTree = "<group>";
@@ -254,6 +262,16 @@
 				22422B526E688687786F5CD8 /* Utils.h */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		224224F8B4B4950D42076F63 /* AutoLayoutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				224222E784ED1E5386920688 /* ALXibViewController.h */,
+				2242270209995A0892AD0EFE /* ALXibViewController.m */,
+			);
+			name = AutoLayoutViewController;
+			path = ActivityView/AutoLayoutViewController;
 			sourceTree = "<group>";
 		};
 		224226022A56C65F4D75BAB7 /* Widget */ = {
@@ -329,6 +347,8 @@
 				812BABC41DAE531500A5817E /* PeekViewController.m */,
 				8141653B1DBF6A8600C4CB83 /* TouchIdViewController.h */,
 				8141653C1DBF6A8600C4CB83 /* TouchIdViewController.m */,
+				224226F800534A86B942C342 /* JapannessViewController.h */,
+				224225EE81CDA90D5F61443A /* JapannessViewController.m */,
 			);
 			path = ActivityView;
 			sourceTree = "<group>";
@@ -364,7 +384,7 @@
 		81787EB21D25F69C00E75257 /* firstiosapp */ = {
 			isa = PBXGroup;
 			children = (
-				8110CF961DAB77A600588BD0 /* firstiosapp.entitlements */,
+				224224F8B4B4950D42076F63 /* AutoLayoutViewController */,
 				81AFECFA1D462E0F0041A35C /* BaseView */,
 				81787EBC1D25F69C00E75257 /* Main.storyboard */,
 				81787EBF1D25F69C00E75257 /* Assets.xcassets */,
@@ -512,7 +532,8 @@
 				TargetAttributes = {
 					81787EAF1D25F69C00E75257 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = GDFHW66V92;
+						DevelopmentTeam = TLGTZY7736;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 0;
@@ -561,6 +582,7 @@
 				81787EC01D25F69C00E75257 /* Assets.xcassets in Resources */,
 				81787EBE1D25F69C00E75257 /* Main.storyboard in Resources */,
 				22422616185C27A7655CEDF6 /* firstxib.xib in Resources */,
+				812770AB1DC33E4400DB2563 /* autotest.xib in Resources */,
 				812BABBF1DACFC9300A5817E /* bingo.png in Resources */,
 				2242241D30E60974CDC0B4EF /* loadxib.xib in Resources */,
 				224227172C3FAE0EC9604B82 /* MyCollectionCell.xib in Resources */,
@@ -625,6 +647,8 @@
 				2242240FAD8258B0CCA02938 /* ProgressCircleView.m in Sources */,
 				22422B55A5D1CAF854370A28 /* ProgressMDView.m in Sources */,
 				812BABC51DAE531500A5817E /* PeekViewController.m in Sources */,
+				22422AFED87FB2745CD80206 /* JapannessViewController.m in Sources */,
+				2242278EE629E5441C84AD5D /* ALXibViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,7 +740,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -755,7 +779,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -769,7 +793,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GDFHW66V92;
+				DEVELOPMENT_TEAM = TLGTZY7736;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/firstiosapp/GT.embeddedframework",
@@ -777,7 +801,7 @@
 				INFOPLIST_FILE = firstiosapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebe.firstiosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebe.firstiosapp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -791,7 +815,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GDFHW66V92;
+				DEVELOPMENT_TEAM = TLGTZY7736;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/firstiosapp/GT.embeddedframework",
@@ -799,7 +823,7 @@
 				INFOPLIST_FILE = firstiosapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebe.firstiosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebe.firstiosapp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

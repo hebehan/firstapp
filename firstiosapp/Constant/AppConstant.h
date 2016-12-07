@@ -8,7 +8,7 @@
 #ifndef AppConstant_h
 #import "UIKit/UIKit.h"
 static const NSString *hello=@"heheh";
-#define MyItems @[@"常见View",@"UITableView",@"UICollectionView",@"网络相关",@"系统通知",@"UITabBarController",@"动画",@"手势",@"选图拍照",@"相关跳转",@"设备信息",@"UITextFiled",@"自定义画线等",@"自定义动动动",@"3DTOUCH",@"日语五十音",@"XibAutoLayout",@"CodeAutoLayout",@"定位"]
+#define MyItems @[@"常见View",@"UITableView",@"UICollectionView",@"网络相关",@"系统通知",@"UITabBarController",@"动画",@"手势",@"选图拍照",@"相关跳转",@"设备信息",@"UITextFiled",@"自定义画线等",@"自定义动动动",@"3DTOUCH",@"日语五十音",@"XibAutoLayout",@"CodeAutoLayout",@"定位",@"百度地图"]
 typedef NS_ENUM (NSInteger ,ItemType){
     ItemTypeNormalView = 0,
     ItemTypeTableView,
@@ -28,7 +28,8 @@ typedef NS_ENUM (NSInteger ,ItemType){
     ItemTypeJapaness,
     ItemTypeAutoLayout,
     ItemTypeCodeAutoLayout,
-    ItemTypeLocation
+    ItemTypeLocation,
+    ItemTypeBaiDuMap
 };
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

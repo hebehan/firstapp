@@ -20,6 +20,7 @@
 @end
 
 @implementation AppDelegate{
+    BMKMapManager* mapManager;
 }
 
 
@@ -55,7 +56,9 @@
 //    GT_DEBUG_SET_AUTOROTATE(false);
 //    
 //    GT_DEBUG_SET_SUPPORT_ORIENTATIONS(UIInterfaceOrientationMaskPortrait);
-   
+    mapManager = [[BMKMapManager alloc] init];
+    BOOL ret = [mapManager start:@"tkZMwufg16tt8xiKnHHS9GCi0FFozj92" generalDelegate:self];
+    NSLog(@"百度地图%@",ret?@"初始化成功":@"初始化失败");
     return YES;
 }
 

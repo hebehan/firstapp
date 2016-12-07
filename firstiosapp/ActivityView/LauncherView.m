@@ -29,6 +29,7 @@
 #import "ALXibViewController.h"
 #import "ALCodeViewController.h"
 #import "LocationViewController.h"
+#import "BaiDuMapViewController.h"
 
 @interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate,UIAlertViewDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
@@ -196,6 +197,9 @@
             break;
         case ItemTypeLocation:
             [self.navigationController pushViewController:[[LocationViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeBaiDuMap:
+            [self.navigationController pushViewController:[[BaiDuMapViewController alloc] init] animated:YES];
             break;
     }
 }

@@ -102,7 +102,7 @@
 }
 
 -(void)settingTap{
-    NSInteger version = [[[UIDevice currentDevice].systemVersion substringWithRange:NSMakeRange(0, 1)] integerValue];
+    NSInteger version = [[[[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."] objectAtIndex:0] integerValue];
     if (version <= 7){
         UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Setting" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"prefs:root=INTERNET_TETHERING",@"prefs:root=WIFI",@"prefs:root=LOCATION_SERVICES",nil];
         actionSheet.tag = 3;

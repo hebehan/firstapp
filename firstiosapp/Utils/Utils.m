@@ -233,4 +233,9 @@ static Utils *instance = nil;
 //    NSLog(@"3---%@", timeString1);
     return array1;
 }
+
++ (NSInteger)getSysVer {
+    return [[[[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."] objectAtIndex:0] integerValue];
+
+}
 @end

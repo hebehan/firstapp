@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2242203879930EB0D76724C5 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 224229FCE2A69F113826BB16 /* MASConstraintMaker.m */; };
 		224220DD1573080790E533CA /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242200D077495347E187D41 /* DeviceInfoViewController.m */; };
 		22422174E7906732F2FF8975 /* WeekSportChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224226FC1E5482EB27763784 /* WeekSportChartView.m */; };
+		224221AE24FBD1F0B6FD7FC6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422E879BA83933DEC90B27 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		2242222D45F05F5995DFD24C /* HebeNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422ACA1494DBFDBFE4B4DF /* HebeNetWork.m */; };
 		2242225580249D69972741A8 /* MyCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242216DB6DF224FA996247A /* MyCollectionCell.m */; };
 		224222A759D685089C30420F /* NetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422857D5176F6165D2F83B /* NetViewController.m */; };
@@ -19,6 +21,8 @@
 		2242240FAD8258B0CCA02938 /* ProgressCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242208D970435D9ED030311 /* ProgressCircleView.m */; };
 		22422410FDC8A21531565572 /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422FA72FE078A0AB166AF8 /* MotionViewController.m */; };
 		2242241D30E60974CDC0B4EF /* loadxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224226340EC13EC42B4261AE /* loadxib.xib */; };
+		224224BCA96915DA8E7382E8 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242224B8A58DADB904B9EED /* MASViewConstraint.m */; };
+		22422593DD51B550942E88FB /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242293BC3878873BFCB07D6 /* MASViewAttribute.m */; };
 		22422616185C27A7655CEDF6 /* firstxib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22422AA3837BB1808521FB40 /* firstxib.xib */; };
 		2242264685DCCEF50B5E6084 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422A5B5801079F197A8FB7 /* Toast.m */; };
 		224226722CA6D8254F5837AA /* TakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242282E569D14EE719E6554 /* TakePhotoViewController.m */; };
@@ -26,9 +30,12 @@
 		224226D4AFEDA3377EE04033 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224227FA1A5B7CFA8BF6E3D5 /* SecondViewController.m */; };
 		224227172C3FAE0EC9604B82 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224227DE63149CF186AE8A70 /* MyCollectionCell.xib */; };
 		22422728A2FAAF87DED462CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422CA91D38D11FD6414911 /* AppDelegate.m */; };
+		2242276342CCBE78648A6B3E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242270F7D958BE05CD77918 /* ViewController+MASAdditions.m */; };
 		2242278D4F5E4DB17BA8EE5D /* MyTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220ECB8E422498225435B /* MyTabCell.m */; };
 		2242278EE629E5441C84AD5D /* ALXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242270209995A0892AD0EFE /* ALXibViewController.m */; };
+		22422791A7F77A0F85E90FF6 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220A614B9F657CDD53E25 /* View+MASAdditions.m */; };
 		224227A790344B42B52A6AB3 /* HebeVCAT.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422053D9500C9CCD91F96A /* HebeVCAT.m */; };
+		224227B24FE26D874791ACC6 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242210A2C6A0C487214F8BF /* MASCompositeConstraint.m */; };
 		224228C477BBFB24B8FFDBE6 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422574E3A38C54A42B598C /* CollectionView.m */; };
 		224228EF5378166466774CDA /* SelfDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422B4F5A645559FE736E33 /* SelfDrawViewController.m */; };
 		2242297BA8093861B907884C /* NormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422126D4043299B09A9958 /* NormalViewController.m */; };
@@ -36,13 +43,17 @@
 		224229FBA6A92B43DD5F6DE2 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220476E79F2E1CD7063AB /* NotificationViewController.m */; };
 		22422A3D32CFCC4563DEAD59 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 224220681E402D7034653E6F /* 1.png */; };
 		22422A3E0B396D578F4C41D4 /* LauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242296D69822564C1D66DDB /* LauncherView.m */; };
+		22422AAB7299346B703376B9 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242296609CB81ED8B61AD08 /* NSArray+MASAdditions.m */; };
 		22422AFED87FB2745CD80206 /* JapannessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224225EE81CDA90D5F61443A /* JapannessViewController.m */; };
 		22422B55A5D1CAF854370A28 /* ProgressMDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224224BBABE702B6033D1D4B /* ProgressMDView.m */; };
+		22422B797F3ED381A504317A /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242255CF4AB9D6BADBC86F2 /* MASConstraint.m */; };
 		22422BF882D0222D51527956 /* HorizontalProgressDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422DD6F520B9DD5E7D1B8F /* HorizontalProgressDrawView.m */; };
 		22422D760D28ADF3B045DC56 /* BaseDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224225B751379C2D38FB1CE7 /* BaseDrawView.m */; };
 		22422E0F330818BD43F93C6F /* XibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224228AF7B426E4516C3A641 /* XibViewController.m */; };
+		22422E39BA066D1B2671D44B /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242215B9E6C9FFFFCFBA551 /* LocationViewController.m */; };
 		22422E6188C560D3CA5557D4 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242211AC98E84D150129B41 /* BaseTabBarController.m */; };
 		22422E95FB750A48C01ED35E /* UITextFiledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422916A12F222AD1B13525 /* UITextFiledViewController.m */; };
+		22422F54E593627CC8BF6D51 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422DEFCD42DA871633901F /* MASLayoutConstraint.m */; };
 		812770AB1DC33E4400DB2563 /* autotest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812770AA1DC33E4400DB2563 /* autotest.xib */; };
 		812BABBF1DACFC9300A5817E /* bingo.png in Resources */ = {isa = PBXBuildFile; fileRef = 812BABBE1DACFC9300A5817E /* bingo.png */; };
 		812BABC21DADE15D00A5817E /* SanDTOUCHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BABC11DADE15D00A5817E /* SanDTOUCHViewController.m */; };
@@ -53,6 +64,9 @@
 		81787EBE1D25F69C00E75257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81787EBC1D25F69C00E75257 /* Main.storyboard */; };
 		81787EC01D25F69C00E75257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81787EBF1D25F69C00E75257 /* Assets.xcassets */; };
 		81787EC31D25F69C00E75257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81787EC11D25F69C00E75257 /* LaunchScreen.storyboard */; };
+		8196A0861DF169E500897FCD /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8196A0851DF169E500897FCD /* apple.jpg */; };
+		8196A0891DF178B900897FCD /* ALCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8196A0881DF178B900897FCD /* ALCodeViewController.m */; };
+		8196A08B1DF5832600897FCD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8196A08A1DF5832600897FCD /* CoreLocation.framework */; };
 		81AFECFD1D462E800041A35C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AFECFC1D462E800041A35C /* BaseViewController.m */; };
 		81DEE2681DB4D75300FE174F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DEE2671DB4D75300FE174F /* Security.framework */; };
 		81DEE26C1DB4D7BA00FE174F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DEE26B1DB4D7BA00FE174F /* CoreTelephony.framework */; };
@@ -93,16 +107,21 @@
 		22422053D9500C9CCD91F96A /* HebeVCAT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HebeVCAT.m; sourceTree = "<group>"; };
 		224220681E402D7034653E6F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		2242208D970435D9ED030311 /* ProgressCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressCircleView.m; sourceTree = "<group>"; };
+		224220A614B9F657CDD53E25 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		224220B1B04D0299F4B7AAD4 /* MyGesRecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGesRecViewController.h; sourceTree = "<group>"; };
 		224220CB5E626DCE98052063 /* HebeVCAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HebeVCAT.h; sourceTree = "<group>"; };
 		224220ECB8E422498225435B /* MyTabCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabCell.m; sourceTree = "<group>"; };
 		224220EE438F73B1F105CC8B /* HorizontalProgressDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalProgressDrawView.h; sourceTree = "<group>"; };
 		224220FACE04DA8BE327F489 /* ProgressMDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressMDView.h; sourceTree = "<group>"; };
+		2242210A2C6A0C487214F8BF /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		2242211AC98E84D150129B41 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		22422126D4043299B09A9958 /* NormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalViewController.m; sourceTree = "<group>"; };
 		22422138D14E6EB752C08711 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		2242215B9E6C9FFFFCFBA551 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		2242216DB6DF224FA996247A /* MyCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionCell.m; sourceTree = "<group>"; };
+		2242218AE563A048939A8EA7 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
 		2242224310BD9625DC53DED9 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		2242224B8A58DADB904B9EED /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		22422286D1676778C08B8578 /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		224222E784ED1E5386920688 /* ALXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALXibViewController.h; sourceTree = "<group>"; };
 		224222FDFBD64650E16A535B /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
@@ -110,21 +129,30 @@
 		22422325902B42834EE8746B /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		224223508B787B6DFE2EF072 /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
 		224223A464EFDF1792AD7592 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		224223CC1CAEFFC8D48627CE /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		224223CEBC305BEFB1BBED18 /* IntentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		2242240FD207104A6FDD8B44 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		224224345CB9260CFB31D49F /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
 		2242244E0BB4151DF3809E92 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		224224A40A41E84C28B7C1CE /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		224224BBABE702B6033D1D4B /* ProgressMDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressMDView.m; sourceTree = "<group>"; };
 		224224F7E7487A4DE60C8C1B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		224225142E8732811F97BBCE /* HebeNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HebeNetWork.h; sourceTree = "<group>"; };
+		2242251B6BB258D71C766EE5 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		2242255CF4AB9D6BADBC86F2 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
 		22422574E3A38C54A42B598C /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		224225B751379C2D38FB1CE7 /* BaseDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDrawView.m; sourceTree = "<group>"; };
 		224225D8D5ED3E4CDB9CE350 /* WeekSportChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekSportChartView.h; sourceTree = "<group>"; };
 		224225EE81CDA90D5F61443A /* JapannessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapannessViewController.m; sourceTree = "<group>"; };
 		224226340EC13EC42B4261AE /* loadxib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loadxib.xib; sourceTree = "<group>"; };
 		2242264D995903457655C61F /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
+		2242269465FA30D59A4C5721 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		224226D3BE8249D36FAAAD7C /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
 		224226F800534A86B942C342 /* JapannessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapannessViewController.h; sourceTree = "<group>"; };
 		224226FC1E5482EB27763784 /* WeekSportChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekSportChartView.m; sourceTree = "<group>"; };
 		2242270209995A0892AD0EFE /* ALXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALXibViewController.m; sourceTree = "<group>"; };
+		2242270F7D958BE05CD77918 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		224227D0CB0E206620CDAA53 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		224227DE63149CF186AE8A70 /* MyCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionCell.xib; sourceTree = "<group>"; };
 		224227E42C64D7C4F1A0FECE /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		224227FA1A5B7CFA8BF6E3D5 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
@@ -137,10 +165,16 @@
 		2242286DCD28ABF1D74D5628 /* MyGesRecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGesRecViewController.m; sourceTree = "<group>"; };
 		224228AF7B426E4516C3A641 /* XibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibViewController.m; sourceTree = "<group>"; };
 		22422916A12F222AD1B13525 /* UITextFiledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFiledViewController.m; sourceTree = "<group>"; };
+		2242292FE742CBB1169D6A2C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		2242293BC3878873BFCB07D6 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		2242296609CB81ED8B61AD08 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		2242296D69822564C1D66DDB /* LauncherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherView.m; sourceTree = "<group>"; };
 		2242297ACFD21D9DD4DCC9C3 /* NetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetViewController.h; sourceTree = "<group>"; };
 		2242297DADE078121D2630F5 /* NormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalViewController.h; sourceTree = "<group>"; };
+		224229FCE2A69F113826BB16 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
 		22422A1CA0CB2115338F8014 /* MyTabCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabCell.h; sourceTree = "<group>"; };
+		22422A2A696AF9DF306CEDBD /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		22422A38C84AEA3495110F6A /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		22422A3F2771E5FBD17793C1 /* TakePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoViewController.h; sourceTree = "<group>"; };
 		22422A5B5801079F197A8FB7 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		22422A80F1B2865EA465EBB1 /* IntentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
@@ -148,13 +182,20 @@
 		22422ACA1494DBFDBFE4B4DF /* HebeNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HebeNetWork.m; sourceTree = "<group>"; };
 		22422B4F5A645559FE736E33 /* SelfDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfDrawViewController.m; sourceTree = "<group>"; };
 		22422B526E688687786F5CD8 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		22422B5732BA14946A220760 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
 		22422BAA5D806B5339FDF9D1 /* ProgressCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressCircleView.h; sourceTree = "<group>"; };
 		22422CA91D38D11FD6414911 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22422CE5CD95AC0E36A1189E /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
 		22422D00CCD06BF2BD1C6AF4 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
 		22422D5C7EE12AEF83E8EDA7 /* LauncherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherView.h; sourceTree = "<group>"; };
 		22422D894D3757BB3B4D613D /* SelfDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfDrawViewController.h; sourceTree = "<group>"; };
 		22422DD6F520B9DD5E7D1B8F /* HorizontalProgressDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalProgressDrawView.m; sourceTree = "<group>"; };
+		22422DEFCD42DA871633901F /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		22422E6DBD5329A18265A3F0 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		22422E879BA83933DEC90B27 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		22422FA72FE078A0AB166AF8 /* MotionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionViewController.m; sourceTree = "<group>"; };
+		22422FB31CCA9F277B14FAAF /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		22422FB6E6029E5746CF9079 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
 		812770AA1DC33E4400DB2563 /* autotest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = autotest.xib; sourceTree = "<group>"; };
 		812BABBE1DACFC9300A5817E /* bingo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bingo.png; path = ../../../../AppCodeWorkSpace/sh12321/sh12321/Resources/bingo.png; sourceTree = "<group>"; };
 		812BABC01DADE15D00A5817E /* SanDTOUCHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanDTOUCHViewController.h; sourceTree = "<group>"; };
@@ -173,6 +214,10 @@
 		81787EC41D25F69C00E75257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81787EC91D25F69C00E75257 /* firstiosappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstiosappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81787ED41D25F69C00E75257 /* firstiosappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstiosappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8196A0851DF169E500897FCD /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		8196A0871DF178B900897FCD /* ALCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCodeViewController.h; sourceTree = "<group>"; };
+		8196A0881DF178B900897FCD /* ALCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCodeViewController.m; sourceTree = "<group>"; };
+		8196A08A1DF5832600897FCD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		81AFECFB1D462E800041A35C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		81AFECFC1D462E800041A35C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		81DEE2671DB4D75300FE174F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -195,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8196A08B1DF5832600897FCD /* CoreLocation.framework in Frameworks */,
 				8141653A1DBF6A5200C4CB83 /* LocalAuthentication.framework in Frameworks */,
 				81DEE27E1DB4D86300FE174F /* libz.tbd in Frameworks */,
 				81DEE27C1DB4D81D00FE174F /* libsqlite3.dylib in Frameworks */,
@@ -227,6 +273,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		224221494EC47236B9ABA1C1 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				22422A2A696AF9DF306CEDBD /* Masonry.h */,
+				22422CE5CD95AC0E36A1189E /* MASUtilities.h */,
+				22422FB31CCA9F277B14FAAF /* MASConstraint.h */,
+				2242255CF4AB9D6BADBC86F2 /* MASConstraint.m */,
+				224226D3BE8249D36FAAAD7C /* MASViewAttribute.h */,
+				2242293BC3878873BFCB07D6 /* MASViewAttribute.m */,
+				2242251B6BB258D71C766EE5 /* MASViewConstraint.h */,
+				2242224B8A58DADB904B9EED /* MASViewConstraint.m */,
+				2242240FD207104A6FDD8B44 /* View+MASAdditions.h */,
+				224220A614B9F657CDD53E25 /* View+MASAdditions.m */,
+				22422B5732BA14946A220760 /* MASConstraintMaker.h */,
+				224229FCE2A69F113826BB16 /* MASConstraintMaker.m */,
+				22422FB6E6029E5746CF9079 /* MASLayoutConstraint.h */,
+				22422DEFCD42DA871633901F /* MASLayoutConstraint.m */,
+				22422E6DBD5329A18265A3F0 /* NSArray+MASAdditions.h */,
+				2242296609CB81ED8B61AD08 /* NSArray+MASAdditions.m */,
+				2242218AE563A048939A8EA7 /* MASConstraint+Private.h */,
+				2242292FE742CBB1169D6A2C /* MASCompositeConstraint.h */,
+				2242210A2C6A0C487214F8BF /* MASCompositeConstraint.m */,
+				224224A40A41E84C28B7C1CE /* View+MASShorthandAdditions.h */,
+				224223CC1CAEFFC8D48627CE /* ViewController+MASAdditions.h */,
+				2242270F7D958BE05CD77918 /* ViewController+MASAdditions.m */,
+				22422A38C84AEA3495110F6A /* NSArray+MASShorthandAdditions.h */,
+				2242269465FA30D59A4C5721 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				22422E879BA83933DEC90B27 /* NSLayoutConstraint+MASDebugAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 		2242226826D4111D764077FE /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +347,8 @@
 			children = (
 				224222E784ED1E5386920688 /* ALXibViewController.h */,
 				2242270209995A0892AD0EFE /* ALXibViewController.m */,
+				8196A0871DF178B900897FCD /* ALCodeViewController.h */,
+				8196A0881DF178B900897FCD /* ALCodeViewController.m */,
 			);
 			name = AutoLayoutViewController;
 			path = ActivityView/AutoLayoutViewController;
@@ -300,6 +380,14 @@
 				22422ACA1494DBFDBFE4B4DF /* HebeNetWork.m */,
 			);
 			path = HebeNetWork;
+			sourceTree = "<group>";
+		};
+		22422A1FA20D9788BBA10BD5 /* Part */ = {
+			isa = PBXGroup;
+			children = (
+				224221494EC47236B9ABA1C1 /* Masonry */,
+			);
+			path = Part;
 			sourceTree = "<group>";
 		};
 		22422AEB4C4BA3E3F2EC9A69 /* ActivityView */ = {
@@ -349,6 +437,8 @@
 				8141653C1DBF6A8600C4CB83 /* TouchIdViewController.m */,
 				224226F800534A86B942C342 /* JapannessViewController.h */,
 				224225EE81CDA90D5F61443A /* JapannessViewController.m */,
+				224227D0CB0E206620CDAA53 /* LocationViewController.h */,
+				2242215B9E6C9FFFFCFBA551 /* LocationViewController.m */,
 			);
 			path = ActivityView;
 			sourceTree = "<group>";
@@ -356,6 +446,7 @@
 		22422F0053EC1055EAA7CC9D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8196A0851DF169E500897FCD /* apple.jpg */,
 				812BABBE1DACFC9300A5817E /* bingo.png */,
 				224220681E402D7034653E6F /* 1.png */,
 			);
@@ -402,6 +493,7 @@
 				22422387DC0B2BF0857A5DE0 /* Utils */,
 				224227AB64E276AB394D3B42 /* HebeNetWork */,
 				2242226826D4111D764077FE /* Animation */,
+				22422A1FA20D9788BBA10BD5 /* Part */,
 			);
 			path = firstiosapp;
 			sourceTree = "<group>";
@@ -430,6 +522,7 @@
 		81DEE2691DB4D75800FE174F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8196A08A1DF5832600897FCD /* CoreLocation.framework */,
 				814165391DBF6A5200C4CB83 /* LocalAuthentication.framework */,
 				81DEE2841DB4DCCF00FE174F /* GT.embeddedframework */,
 				81DEE27D1DB4D86300FE174F /* libz.tbd */,
@@ -581,6 +674,7 @@
 				81787EC31D25F69C00E75257 /* LaunchScreen.storyboard in Resources */,
 				81787EC01D25F69C00E75257 /* Assets.xcassets in Resources */,
 				81787EBE1D25F69C00E75257 /* Main.storyboard in Resources */,
+				8196A0861DF169E500897FCD /* apple.jpg in Resources */,
 				22422616185C27A7655CEDF6 /* firstxib.xib in Resources */,
 				812770AB1DC33E4400DB2563 /* autotest.xib in Resources */,
 				812BABBF1DACFC9300A5817E /* bingo.png in Resources */,
@@ -630,6 +724,7 @@
 				2242222D45F05F5995DFD24C /* HebeNetWork.m in Sources */,
 				224229FBA6A92B43DD5F6DE2 /* NotificationViewController.m in Sources */,
 				2242231FEB987F4D67FD2FF6 /* BaseNavigationController.m in Sources */,
+				8196A0891DF178B900897FCD /* ALCodeViewController.m in Sources */,
 				22422E6188C560D3CA5557D4 /* BaseTabBarController.m in Sources */,
 				224227A790344B42B52A6AB3 /* HebeVCAT.m in Sources */,
 				224223361963FCB71450E6FA /* AnimationViewController.m in Sources */,
@@ -649,6 +744,17 @@
 				812BABC51DAE531500A5817E /* PeekViewController.m in Sources */,
 				22422AFED87FB2745CD80206 /* JapannessViewController.m in Sources */,
 				2242278EE629E5441C84AD5D /* ALXibViewController.m in Sources */,
+				22422E39BA066D1B2671D44B /* LocationViewController.m in Sources */,
+				22422B797F3ED381A504317A /* MASConstraint.m in Sources */,
+				22422593DD51B550942E88FB /* MASViewAttribute.m in Sources */,
+				224224BCA96915DA8E7382E8 /* MASViewConstraint.m in Sources */,
+				22422791A7F77A0F85E90FF6 /* View+MASAdditions.m in Sources */,
+				2242203879930EB0D76724C5 /* MASConstraintMaker.m in Sources */,
+				22422F54E593627CC8BF6D51 /* MASLayoutConstraint.m in Sources */,
+				22422AAB7299346B703376B9 /* NSArray+MASAdditions.m in Sources */,
+				224227B24FE26D874791ACC6 /* MASCompositeConstraint.m in Sources */,
+				2242276342CCBE78648A6B3E /* ViewController+MASAdditions.m in Sources */,
+				224221AE24FBD1F0B6FD7FC6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

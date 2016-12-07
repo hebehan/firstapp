@@ -27,6 +27,8 @@
 #import "JapannessViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 #import "ALXibViewController.h"
+#import "ALCodeViewController.h"
+#import "LocationViewController.h"
 
 @interface LauncherView ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate,UIViewControllerTransitioningDelegate,UIAlertViewDelegate>
 @property (nonatomic, retain)UIAlertView *alertView;
@@ -48,7 +50,10 @@
     tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:tableView];
     hebeVCAT = [HebeVCAT new];
-    
+
+    [self.navigationController.navigationBar setBarTintColor:[UIColor purpleColor]];
+    [self.navigationController.navigationBar setTintColor:[UIColor yellowColor]];
+
 //    if (!istouch) {
 //        LAContext *context = [[LAContext alloc] init];
 //        NSError *error;
@@ -185,6 +190,12 @@
             break;
         case ItemTypeAutoLayout:
             [self.navigationController pushViewController:[[ALXibViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeCodeAutoLayout:
+            [self.navigationController pushViewController:[[ALCodeViewController alloc] init] animated:YES];
+            break;
+        case ItemTypeLocation:
+            [self.navigationController pushViewController:[[LocationViewController alloc] init] animated:YES];
             break;
     }
 }

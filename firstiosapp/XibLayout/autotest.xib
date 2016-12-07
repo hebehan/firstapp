@@ -1,44 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="G13-6s-r9v">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="G13-6s-r9v">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVT-gK-tKQ">
-                    <rect key="frame" x="109" y="291" width="128" height="73"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.0" green="0.56947511434555054" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="Button">
-                        <color key="titleColor" red="0.95681176013413582" green="1" blue="0.94044918803336097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6E-Qd-Z1i">
-                    <rect key="frame" x="20" y="131" width="280" height="50"/>
-                    <color key="backgroundColor" red="1" green="0.73413664102554321" blue="0.73175811767578125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bZV-1m-cDf">
+                    <rect key="frame" x="0.0" y="64" width="375" height="269.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBP-K9-wC8">
+                    <rect key="frame" x="0.0" y="398" width="375" height="269"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苹果公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuW-Pp-GWq">
+                            <rect key="frame" x="16" y="10" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.32286999436803654" green="1" blue="0.30125462686929017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkH-JZ-dOh">
+                            <rect key="frame" x="16" y="40" width="343" height="588.5"/>
+                            <color key="backgroundColor" red="1" green="0.99947084035955336" blue="0.49990153950992999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <mutableString key="text">苹果公司（Apple Inc. ）是美国的一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩(Ron Wayne)等三人于1976年4月1日创立，并命名为美国苹果电脑公司（Apple Computer Inc. ）， 2007年1月9日更名为苹果公司，总部位于加利福尼亚州的库比蒂诺。  
+苹果公司创立之初主要开发和销售的个人电脑，截至2014年致力于设计、开发和销售消费电子、计算机软件、在线服务和个人计算机。苹果的Apple II于1970年代助长了个人电脑革命，其后的Macintosh接力于1980年代持续发展。该公司硬件产品主要是Mac电脑系列、iPod媒体播放器、iPhone智能手机和iPad平板电脑；在线服务包括iCloud、iTunes Store和App Store；消费软件包括OS X和iOS操作系统、iTunes多媒体浏览器、Safari网络浏览器，还有iLife和iWork创意和生产力套件。苹果公司在高科技企业中以创新而闻名世界。  
+苹果公司1980年12月12日公开招股上市，2012年创下6235亿美元的市值记录，截至2014年6月，苹果公司已经连续三年成为全球市值最大公司。苹果公司在2014年世界500强排行榜中排名第15名。2013年9月30日，在宏盟集团的“全球最佳品牌”报告中，苹果公司超过可口可乐成为世界最有价值品牌。2014年，苹果品牌超越谷歌（Google），成为世界最具价值品牌 。</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <mutableString key="userLabel">苹果公司（Apple Inc. ）是美国的一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩(Ron Wayne)等三人于1976年4月1日创立，并命名为美国苹果电脑公司（Apple Computer Inc. ）， 2007年1月9日更名为苹果公司，总部位于加利福尼亚州的库比蒂诺。   苹果公司创立之初主要开发和销售的个人电脑，截至2014年致力于设计、开发和销售消费电子、计算机软件、在线服务和个人计算机。苹果的Apple II于1970年代助长了个人电脑革命，其后的Macintosh接力于1980年代持续发展。该公司硬件产品主要是Mac电脑系列、iPod媒体播放器、iPhone智能手机和iPad平板电脑；在线服务包括iCloud、iTunes Store和App Store；消费软件包括OS X和iOS操作系统、iTunes多媒体浏览器、Safari网络浏览器，还有iLife和iWork创意和生产力套件。苹果公司在高科技企业中以创新而闻名世界。   苹果公司1980年12月12日公开招股上市，2012年创下6235亿美元的市值记录，截至2014年6月，苹果公司已经连续三年成为全球市值最大公司。苹果公司在2014年世界500强排行榜中排名第15名。2013年9月30日，在宏盟集团的“全球最佳品牌”报告中，苹果公司超过可口可乐成为世界最有价值品牌。2014年，苹果品牌超越谷歌（Google），成为世界最具价值品牌 。</mutableString>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25907422842148942" green="1" blue="0.95368922042032434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="wTW-v0-aG0"/>
+                        <constraint firstItem="tkH-JZ-dOh" firstAttribute="top" secondItem="YuW-Pp-GWq" secondAttribute="bottom" id="Owk-hM-3gD"/>
+                        <constraint firstItem="YuW-Pp-GWq" firstAttribute="top" secondItem="gBP-K9-wC8" secondAttribute="top" constant="10" id="TNU-WW-fe3"/>
+                        <constraint firstItem="tkH-JZ-dOh" firstAttribute="width" secondItem="gBP-K9-wC8" secondAttribute="width" constant="-32" id="bfc-Oh-URh"/>
+                        <constraint firstItem="tkH-JZ-dOh" firstAttribute="top" secondItem="YuW-Pp-GWq" secondAttribute="bottom" id="eKG-2d-1UP"/>
+                        <constraint firstItem="YuW-Pp-GWq" firstAttribute="leading" secondItem="gBP-K9-wC8" secondAttribute="leading" constant="16" id="fc6-Hg-qPe"/>
+                        <constraint firstItem="YuW-Pp-GWq" firstAttribute="width" secondItem="gBP-K9-wC8" secondAttribute="width" constant="-32" id="iU9-9I-vj1"/>
+                        <constraint firstAttribute="bottom" secondItem="tkH-JZ-dOh" secondAttribute="bottom" id="kR6-s0-Oct"/>
+                        <constraint firstItem="tkH-JZ-dOh" firstAttribute="leading" secondItem="gBP-K9-wC8" secondAttribute="leading" constant="16" id="ttR-nz-1sC"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                </button>
+                </scrollView>
             </subviews>
-            <color key="backgroundColor" red="0.68919935272163646" green="0.95914985769978867" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="X6E-Qd-Z1i" firstAttribute="top" secondItem="G13-6s-r9v" secondAttribute="top" constant="131" id="Iaf-Jl-X8J"/>
-                <constraint firstItem="X6E-Qd-Z1i" firstAttribute="leading" secondItem="G13-6s-r9v" secondAttribute="leading" constant="20" id="OOx-2b-uQh"/>
-                <constraint firstAttribute="trailing" secondItem="X6E-Qd-Z1i" secondAttribute="trailing" constant="20" id="lvZ-qr-GhX"/>
+                <constraint firstItem="bZV-1m-cDf" firstAttribute="height" secondItem="G13-6s-r9v" secondAttribute="height" multiplier="0.5" constant="-64" id="ERX-6g-MWc"/>
+                <constraint firstAttribute="bottom" secondItem="gBP-K9-wC8" secondAttribute="bottom" id="GGO-IF-YUF"/>
+                <constraint firstItem="gBP-K9-wC8" firstAttribute="top" secondItem="bZV-1m-cDf" secondAttribute="bottom" id="Hig-cG-rX1"/>
+                <constraint firstAttribute="trailing" secondItem="bZV-1m-cDf" secondAttribute="trailing" id="RUI-Xh-BeK"/>
+                <constraint firstItem="bZV-1m-cDf" firstAttribute="leading" secondItem="G13-6s-r9v" secondAttribute="leading" id="VSh-zS-Bc2"/>
+                <constraint firstAttribute="trailing" secondItem="gBP-K9-wC8" secondAttribute="trailing" id="XFG-JN-GtA"/>
+                <constraint firstItem="gBP-K9-wC8" firstAttribute="leading" secondItem="G13-6s-r9v" secondAttribute="leading" id="fhg-XB-xS6"/>
+                <constraint firstItem="bZV-1m-cDf" firstAttribute="top" secondItem="G13-6s-r9v" secondAttribute="top" constant="64" id="tEW-5l-8dN"/>
             </constraints>
-            <point key="canvasLocation" x="-613" y="-784"/>
+            <point key="canvasLocation" x="-625.5" y="-717.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="apple.jpg" width="241" height="300"/>
+    </resources>
 </document>

@@ -29,7 +29,7 @@
 		224226CAE13106F3B807DE4F /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422A80F1B2865EA465EBB1 /* IntentViewController.m */; };
 		224226D4AFEDA3377EE04033 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224227FA1A5B7CFA8BF6E3D5 /* SecondViewController.m */; };
 		224227172C3FAE0EC9604B82 /* MyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224227DE63149CF186AE8A70 /* MyCollectionCell.xib */; };
-		22422728A2FAAF87DED462CD /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22422CA91D38D11FD6414911 /* AppDelegate.mm */; };
+		22422728A2FAAF87DED462CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22422CA91D38D11FD6414911 /* AppDelegate.m */; };
 		2242276342CCBE78648A6B3E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242270F7D958BE05CD77918 /* ViewController+MASAdditions.m */; };
 		2242278D4F5E4DB17BA8EE5D /* MyTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 224220ECB8E422498225435B /* MyTabCell.m */; };
 		2242278EE629E5441C84AD5D /* ALXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2242270209995A0892AD0EFE /* ALXibViewController.m */; };
@@ -196,7 +196,7 @@
 		22422B526E688687786F5CD8 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		22422B5732BA14946A220760 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
 		22422BAA5D806B5339FDF9D1 /* ProgressCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressCircleView.h; sourceTree = "<group>"; };
-		22422CA91D38D11FD6414911 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		22422CA91D38D11FD6414911 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		22422CE5CD95AC0E36A1189E /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
 		22422D00CCD06BF2BD1C6AF4 /* DeviceInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoViewController.h; sourceTree = "<group>"; };
 		22422D5C7EE12AEF83E8EDA7 /* LauncherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherView.h; sourceTree = "<group>"; };
@@ -524,7 +524,7 @@
 				22422F0053EC1055EAA7CC9D /* Resources */,
 				224222B57E02A504323581F5 /* Constant */,
 				22422826ACAAEF066D1847E5 /* AppDelegate.h */,
-				22422CA91D38D11FD6414911 /* AppDelegate.mm */,
+				22422CA91D38D11FD6414911 /* AppDelegate.m */,
 				815A31951D4B698E00B8662D /* FirstiosappPrefixHeader.pch */,
 				224226022A56C65F4D75BAB7 /* Widget */,
 				22422387DC0B2BF0857A5DE0 /* Utils */,
@@ -772,7 +772,7 @@
 				812BABC21DADE15D00A5817E /* SanDTOUCHViewController.m in Sources */,
 				224226D4AFEDA3377EE04033 /* SecondViewController.m in Sources */,
 				22422E0F330818BD43F93C6F /* XibViewController.m in Sources */,
-				22422728A2FAAF87DED462CD /* AppDelegate.mm in Sources */,
+				22422728A2FAAF87DED462CD /* AppDelegate.m in Sources */,
 				2242297BA8093861B907884C /* NormalViewController.m in Sources */,
 				22422A3E0B396D578F4C41D4 /* LauncherView.m in Sources */,
 				2242264685DCCEF50B5E6084 /* Toast.m in Sources */,

@@ -9,8 +9,8 @@
 #define TOAST_LENGTH_SHORT 1.3;
 #define CURRENT_TOAST_TAG 6984678
 @interface Toast : NSObject
-
-+(void)show:(NSString *)message;
+//NSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2) NS_NO_TAIL_CALL;
++(void)show:(NSString *)message, ... NS_FORMAT_FUNCTION(1,2);
 @property (nonatomic, retain)NSString *message;
 @property (nonatomic, retain)UIView *contentView;
 @property (nonatomic, retain)UILabel *label;

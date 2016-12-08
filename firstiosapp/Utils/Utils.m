@@ -234,8 +234,4 @@ static Utils *instance = nil;
     return array1;
 }
 
-+ (NSInteger)getSysVer {
-    return [[[[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."] objectAtIndex:0] integerValue];
-
-}
 @end

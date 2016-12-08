@@ -57,15 +57,19 @@ NSTimer *timer1 = nil;
 }
 /**
  * 显示toast
- * @param message
+ * @param message(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
  */
-+ (void)show:(NSString *)message {
++ (void)show:(NSString *)message , ... NS_FORMAT_FUNCTION(1,2){
+    va_list ap;
+    va_start(ap, message);
+    NSString *appendmessage = [[NSString alloc] initWithFormat:message locale:[NSLocale currentLocale] arguments:ap];
+    va_end(ap);
     if (!toast){
-        toast = [[Toast alloc] initWithMessage:message];
+        toast = [[Toast alloc] initWithMessage:appendmessage];
     } else{
-        [toast initWithMessage:message];
+        [toast initWithMessage:appendmessage];
     }
-    [toast show:message];
+    [toast show:appendmessage];
 }
 //+ (void)show:(NSString *)message, ... {
 //    id eachmessage;
